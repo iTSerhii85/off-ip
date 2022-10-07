@@ -1,9 +1,17 @@
+body {
+  // font-family: ;
+  color: var(--primary-color);
+  font-size: 14px;
+  line-height: 2;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+}
+
 img {
   display: block;
   height: auto;
   max-width: 100%;
 }
-
 
 ul,
 li {

@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Aleksey0808.github.io/project-group-16",
+  "homepage": "https://Aleksey0808.github.io/off-ip.git",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /project-group-16/"
+    "build": "parcel build src/*.html --public-url /off-ip.git/"
   },
   "repository": {
     "type": "git",

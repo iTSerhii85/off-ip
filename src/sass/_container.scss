@@ -3,7 +3,7 @@
     padding: 0 16px 0 16px;
   
     @media (max-width: 480px) {
-      width: 320px;
+      max-width: 480px;
     }
   
     @media (min-width: 768px) {

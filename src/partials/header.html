@@ -24,15 +24,27 @@
     </picture>
     <nav>
       <ul class="site-nav">
-        <li><a class="site-nav__item" href="#Home">Home</a></li>
-        <li>
-          <a class="site-nav__item" href="#How it’s made?">How it’s made?</a>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#Home">Home</a>
         </li>
-        <li><a class="site-nav__item" href="#Our products">Our products</a></li>
-        <li><a class="site-nav__item" href="#Contact">Contact</a></li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#How it’s made?">How it’s made?</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#Our-products">Our products</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#Contact">Contact</a>
+        </li>
       </ul>
     </nav>
-    <button type="button" class="hat__button">Buy now</button>
-    <button type="button" class="burger-button"></button>
+    <button type="button" class="burger-button mobile-menu-btn">
+      <svg class="mobile-menu-btn__icon">
+        <use href="./images/symbol-defs.svg#icon-menu_burger"></use>
+      </svg>
+    </button>
+    <button type="button" class="hat__button button btn-solid-bg">
+      Buy now
+    </button>
   </div>
 </header>

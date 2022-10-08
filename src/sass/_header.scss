@@ -1,0 +1,27 @@
+.site-nav, .hat__button {
+    display: none;
+}
+
+.heder-logo {
+    display: block;
+    width: 40px;
+    height: 37px;
+}
+
+.burger-button {
+    width: 32px;
+    height: 32px;
+}
+
+.hat__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+
+    // position: absolute;
+    top: 0;
+    left: 0;
+
+    padding-top: 12px;
+}

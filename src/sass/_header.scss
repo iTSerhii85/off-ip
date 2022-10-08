@@ -25,3 +25,25 @@
 
     padding-top: 12px;
 }
+
+@media screen and (min-width: 768px) {
+    .hat__button {
+        display: block;
+        width: 152px;
+        height: 42px;
+    }
+
+    .hat__container {
+        justify-content: flex-start;
+    }
+
+    .heder-logo {
+        width: 48px;
+        height: 44px;
+        margin-right: 440px;
+    }
+
+    .burger-button {
+        margin-right: 32px;
+    }
+}

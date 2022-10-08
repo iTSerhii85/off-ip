@@ -197,35 +197,35 @@
 
   &__item {
 
-      position: relative;
-      font-family: 'Montserrat';
-      color: #131313;
-      width: 136px;
-      height: 136px;
-      background: #fff;
-      border: 2px solid #96AF8C;
-      filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
-      border-radius: 15.7808px;
-      margin: 0 auto 86px auto;
+    position: relative;
+    font-family: 'Montserrat';
+    color: #131313;
+    width: 136px;
+    height: 136px;
+    background: #fff;
+    border: 2px solid #96AF8C;
+    filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+    border-radius: 15.7808px;
+    margin: 0 auto 86px auto;
 
-      // padding: 120px 61px 50px;
+    // padding: 120px 61px 50px;
 
-      &::before {
-        display: block;
-        content: "";
-        position: absolute;
-        top: -50%;
-        left: 0;
-        z-index: 10;
-        // transform: translate(-50%, 25%);
-        width: 131px;
-        height: 131px;
-        background-image: url("../images/kelsey-curtis-G5ZenftPPOA-unsplash\ 2.jpg");
-        background-size: 131px 131px;
-        background-repeat: no-repeat;
-        border-radius: 50%;
-        box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
-      }
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: 0;
+      z-index: 10;
+      // transform: translate(-50%, 25%);
+      width: 131px;
+      height: 131px;
+      background-image: url("../images/kelsey-curtis-G5ZenftPPOA-unsplash\ 2.jpg");
+      background-size: 131px 131px;
+      background-repeat: no-repeat;
+      border-radius: 50%;
+      box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
+    }
   }
 
   &__block {
@@ -237,10 +237,9 @@
     background-color: #fff;
 
     &:focus {
-        background-color: red;
-      }
+      background-color: red;
+    }
 
-      
     &::before {
       display: block;
       content: "";
@@ -253,8 +252,9 @@
       background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
       background-size: 131px 131px;
       background-repeat: no-repeat;
-      border-radius: 50%;&:focus {
-        }
+      border-radius: 50%;
+
+      &:focus {}
     }
 
   }

@@ -1,26 +1,38 @@
 <!-- ! Шапка страницы -->
-<header>
-    <div class="container">
-        <picture>
-            <source srcset="./images/heder-logo.png 1x, ./images/heder-logo@2.png 2x" 
-            media="(min-width:1200px)">
-            <source srcset="./images/heder-logo-tablet.png 1x, ./images/heder-logo-tablet@2x.png 2x" 
-            media="(min-width:768px)">
-            <source srcset="./images/heder-logo-mobile.png 1x, ./images/heder-logo-mobile@2x.png 2x" 
-            media="(max-width:767px)">
-            <img
-              src="./images/heder-logo-mobile.png"
-              alt="logo ice cream"
-            />
-          </picture>
-      <nav>
-        <ul class="">
-          <li><a class="" href="#Home">Home</a></li>
-          <li><a class="" href="#How it’s made?">How it’s made?</a></li>
-          <li><a class="" href="#Our products">Our products</a></li>
-          <li><a class="" href="#Contact">Contact</a></li>
-        </ul>
-      </nav>
-      <button type="button" class="">Buy now</button>
-    </div>
-  </header>
+<header class="hat">
+  <div class="container hat__container">
+    <picture class="heder-logo">
+      <source
+        srcset="./images/heder-logo.png 1x, ./images/heder-logo@2.png 2x"
+        media="(min-width:1200px)"
+      />
+      <source
+        srcset="
+          ./images/heder-logo-tablet.png    1x,
+          ./images/heder-logo-tablet@2x.png 2x
+        "
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="
+          ./images/heder-logo-mobile.png    1x,
+          ./images/heder-logo-mobile@2x.png 2x
+        "
+        media="(max-width:767px)"
+      />
+      <img src="./images/heder-logo-mobile.png" alt="logo ice cream" />
+    </picture>
+    <nav>
+      <ul class="site-nav">
+        <li><a class="site-nav__item" href="#Home">Home</a></li>
+        <li>
+          <a class="site-nav__item" href="#How it’s made?">How it’s made?</a>
+        </li>
+        <li><a class="site-nav__item" href="#Our products">Our products</a></li>
+        <li><a class="site-nav__item" href="#Contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button type="button" class="hat__button">Buy now</button>
+    <button type="button" class="burger-button"></button>
+  </div>
+</header>

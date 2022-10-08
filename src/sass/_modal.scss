@@ -1,0 +1,164 @@
+.modal-mobile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 986px;
+  background: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+
+  &__buy {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #131313;
+  }
+}
+
+.modal-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+
+  &__name-m,
+  &__phone-m {
+    width: 224px;
+    height: 32px;
+    margin-bottom: 12px;
+    padding-left: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84a178;
+    border-radius: 10px;
+  }
+
+  &__comment-m {
+    padding-left: 12px;
+    padding-top: 8px;
+    padding-bottom: 39px;
+    width: 224px;
+    height: 64px;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84a178;
+    border-radius: 10px;
+  }
+
+  &__image {
+    position: absolute;
+    top: 99px;
+    display: flex;
+    z-index: 999;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 88px;
+  }
+}
+
+.modal-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__ice-cream {
+    width: 132px;
+    height: 136px;
+    margin-bottom: 83px;
+    appearance: none;
+    border: 2px solid #96af8c;
+    filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+    border-radius: 15.7808px;
+  }
+
+  &__ice-coffe {
+    width: 132px;
+    height: 136px;
+    margin-bottom: 83px;
+    appearance: none;
+    border: 2px solid #efd478;
+    box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+    border-radius: 15.7808px;
+  }
+
+  &__milkshake {
+    width: 132px;
+    height: 136px;
+    appearance: none;
+    border: 2px solid #d6936d;
+    filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+    border-radius: 15.7808px;
+  }
+
+  &__ice-cream:checked {
+    background-color: #96af8c;
+    border-color: #96af8c;
+  }
+  &__ice-coffe:checked {
+    background-color: #efd478;
+    border-color: #efd478;
+  }
+  &__milkshake:checked {
+    background-color: #d6936d;
+    border-color: #d6936d;
+  }
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 114px;
+  height: 42px;
+  margin-top: 24px;
+  background: #f8d24e;
+  border-radius: 10px;
+}
+
+input::placeholder {
+  padding-left: 0px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 12px;
+  line-height: 140%;
+  color: #131313;
+}
+
+.span-ice-cream {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #131313;
+}
+
+// модалка READ MORE
+
+// .modal-read-more {
+// }
+
+.modal-read-more {
+  width: 224px;
+  height: 199px;
+  background: #131313;
+  border-radius: 10px;
+}
+
+.modal-play-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,331 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+body {
+  font-family: "Montserrat";
+  color: var(--primary-color);
+  font-size: 14px;
+  line-height: 2;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  height: 100%;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.container {
+  padding: 0 20px;
+}
+@media (min-width: 480px) {
+  .container {
+    margin: 0 auto;
+    max-width: 480px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 32px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding: 0 16px;
+  }
+}
+
+:root {
+  --primary-color: #FCFCFC;
+  --secondary-color: #131313;
+  --active-color: #F8D24E;
+  --bg-color: #84A178;
+}
+
+.overtext {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 1.23;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-family: "Seymour One";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.modal-mobile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 986px;
+  background: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+}
+.modal-mobile__buy {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Seymour One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #131313;
+}
+
+.modal-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.modal-input__name-m, .modal-input__phone-m {
+  width: 224px;
+  height: 32px;
+  margin-bottom: 12px;
+  padding-left: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+}
+.modal-input__comment-m {
+  padding-left: 12px;
+  padding-top: 8px;
+  padding-bottom: 39px;
+  width: 224px;
+  height: 64px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+}
+.modal-input__image {
+  position: absolute;
+  top: 99px;
+  display: flex;
+  z-index: 999;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 88px;
+}
+
+.modal-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.modal-list__ice-cream {
+  width: 132px;
+  height: 136px;
+  margin-bottom: 83px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 2px solid #96af8c;
+  filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+  border-radius: 15.7808px;
+}
+.modal-list__ice-coffe {
+  width: 132px;
+  height: 136px;
+  margin-bottom: 83px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 2px solid #efd478;
+  box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+  border-radius: 15.7808px;
+}
+.modal-list__milkshake {
+  width: 132px;
+  height: 136px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 2px solid #d6936d;
+  filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+  border-radius: 15.7808px;
+}
+.modal-list__ice-cream:checked {
+  background-color: #96af8c;
+  border-color: #96af8c;
+}
+.modal-list__ice-coffe:checked {
+  background-color: #efd478;
+  border-color: #efd478;
+}
+.modal-list__milkshake:checked {
+  background-color: #d6936d;
+  border-color: #d6936d;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 114px;
+  height: 42px;
+  margin-top: 24px;
+  background: #f8d24e;
+  border-radius: 10px;
+}
+
+input::-moz-placeholder {
+  padding-left: 0px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 12px;
+  line-height: 140%;
+  color: #131313;
+}
+
+input:-ms-input-placeholder {
+  padding-left: 0px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 12px;
+  line-height: 140%;
+  color: #131313;
+}
+
+input::placeholder {
+  padding-left: 0px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 12px;
+  line-height: 140%;
+  color: #131313;
+}
+
+.span-ice-cream {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #131313;
+}
+
+.modal-read-more {
+  width: 224px;
+  height: 199px;
+  background: #131313;
+  border-radius: 10px;
+}
+
+.modal-play-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  background-color: var(--bg-color);
+}
+.footer__wrapper {
+  font-family: "Montserrat";
+  font-weight: 700;
+  padding: 38px 0 40px 0;
+}
+.footer__text {
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.22;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+.footer__title {
+  margin-bottom: 16px;
+}
+.footer__subtitle {
+  font-size: 34px;
+  line-height: 1.2;
+  width: 200px;
+  margin-bottom: 42px;
+}
+.footer__social {
+  display: flex;
+  justify-content: flex-end;
+  -moz-column-gap: 27px;
+       column-gap: 27px;
+  margin-bottom: 44px;
+}
+.footer__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background: #F8D24E;
+}
+.footer__contact {
+  display: block;
+  font-size: 12px;
+  line-height: 2.2;
+  text-align: right;
+  color: var(--secondary-color);
+}
+.footer__contact-tell {
+  color: var(--primary-color);
+}
+.footer__copyright {
+  font-weight: 700;
+  text-align: center;
+  border-top: 1px solid #E1E1E1;
+  padding: 16px 0 62px 0;
+}
+.footer__copyright-text {
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+  color: #7A7A7A;
+}/*# sourceMappingURL=index.css.map */

@@ -1,6 +1,6 @@
 
 .advantages {
-    
+
     padding-bottom: 20px;
 
     @media screen and (min-width: 768px) {
@@ -10,7 +10,7 @@
     @media screen and (min-width: 1200px) {
       padding-bottom: 86px;
   }
-  
+
     background-color: var(--bg-color);
 }
 
@@ -85,7 +85,7 @@
 
         border-radius: 50%;
 
-    
+
         background-color: var(--active-color);
         background-size: 36px 36px;
         background-position: center;
@@ -95,39 +95,39 @@
     &:nth-child(1)::before {
 
         @media screen {
-            background-image: url("../images/advantages-icon-1.png"); 
+            background-image: url("/src/images/advantages/advantages-icon-1.png");
         }
 
         @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
-                background-image: url("../images/advantages-icon-1@2x.png"); 
+                background-image: url("/src/images/advantages/advantages-icon-1@2x.png");
         }
     }
 
     &:nth-child(2)::before {
 
         @media screen {
-            background-image: url("../images/advantages-icon-2.png"); 
+            background-image: url("/src/images/advantages/advantages-icon-2.png");
         }
 
         @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
-                background-image: url("../images/advantages-icon-2@2x.png"); 
+                background-image: url("/src/images/advantages/advantages-icon-2@2x.png");
         }
     }
 
     &:nth-child(3)::before {
 
         @media screen {
-            background-image: url("../images/advantages-icon-3.png"); 
+            background-image: url("/src/images/advantages/advantages-icon-3.png");
         }
 
         @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
-                background-image: url("../images/advantages-icon-3@2x.png"); 
+                background-image: url("/src/images/advantages/advantages-icon-3@2x.png");
         }
     }
 

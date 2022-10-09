@@ -11,40 +11,9 @@
     />
     <link rel="stylesheet" href="/src/sass/index.css" />
   </head>
+  <button class="button" type="button">Buy now</button>
   <body>
-
-
-    <div class="container wrapper">
-      <div class="modal">
-        <button type="button" class="close__button" data-modal-close>
-          <svg class="close__icon" width="11" height="11">
-            <use href="/src/images/symbol-defs.svg#close"></use>
-          </svg>
-        </button>
-        <p class="modal__title">Buy now</p>
-        <ul class="modal__list">
-          <li class="modal__item">
-            <button class="modal__block">
-              <p class="modal__text">ice cream</p>
-            </button>
-          </li>
-          <li class="modal__item">
-            <button class="modal__block">
-              <p class="modal__text">ice cream</p>
-            </button>
-          </li>
-          <li class="modal__item">
-            <button class="modal__block">
-              <p class="modal__text">ice cream</p>
-            </button>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-
-    <!-- <button class="button" type="button">Buy now</button> -->
-    <!-- <div class="modal-mobile">
+    <div class="modal-mobile">
       <ul class="modal-input__image">
         <li>
           <img
@@ -72,17 +41,17 @@
         </li>
       </ul>
       <span class="modal-mobile__buy">Buy now</span>
-      <form class="modal-input" name="" autocomplete="on">
+      <form class="modal-input" name="modal-form" autocomplete="on">
         <ul class="modal-list">
           <li class="">
-            <label class="span-ice-cream"
-              ><input
+            <label>
+              <input
                 class="modal-list__ice-cream"
                 type="checkbox"
                 name="ice-cream"
                 value="ice-cream"
-              />ice cream</label
-            >
+            /></label>
+            <span class="">ice cream</span>
           </li>
           <li class="">
             <label class="span-ice-cream"
@@ -91,17 +60,17 @@
                 type="checkbox"
                 name="ice-cream"
                 value="ice-coffe"
-              />ice coffee</label
+              /><span class="">ice coffee</span></label
             >
           </li>
           <li class="">
-            <label class="span-ice-cream"
+            <label class=""
               ><input
                 class="modal-list__milkshake"
                 type="checkbox"
                 name="ice-cream"
                 value="milkshake"
-              />milkshake</label
+              /><span class="">milkshake</span></label
             >
           </li>
         </ul>
@@ -128,49 +97,141 @@
         />
         <button class="submit-button" type="submit">Submit</button>
       </form>
-    </div> -->
+    </div>
+
+    <button class="button" type="button">Read more</button>
+
+    <!-- Модалка с видео -->
+    <div class="modal-video">
+      <button type="button" class="modal-close" data-modal-close>
+        <svg width="9" height="9">
+          <use href="/src/images/symbol-defs.svg#close"></use>
+        </svg>
+      </button>
+      <p class="modal-video__how">How it’s made?</p>
+      <div class="modal-video__play">
+        <a class="video" href="https://www.youtube.com/watch?v=-8MPE74pq4w"
+          ><img src="/src/images/modal/Vector.png" alt="play"
+        /></a>
+      </div>
+      <div class="modal-video__text_container">
+        <p class="modal-video__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et
+        </p>
+      </div>
+    </div>
+
+    <!-- Модалка с картой -->
+
+    <div class="modal-map">
+      <button type="button" class="modal-close" data-modal-close>
+        <svg width="9" height="9">
+          <use href="/src/images/symbol-defs.svg#close"></use>
+        </svg>
+      </button>
+      <p class="modal-map__location">Our Locations</p>
+      <div class="modal-map__map">
+        <a
+          class="map"
+          href="https://www.google.com/maps/place/%D0%9F%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D0%B0,+%D0%9F%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+36000/@49.6020445,34.5572385,12z/data=!3m1!4b1!4m5!3m4!1s0x40d825e425e6ba6b:0xcf3e6bdfb9e4ca82!8m2!3d49.588267!4d34.5514169"
+          ><img src="/src/images/modal/Poltava.png" alt="map"
+        /></a>
+      </div>
+      <a
+        class="link-map"
+        href="https://www.google.com/maps/place/%D0%9F%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D0%B0,+%D0%9F%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+36000/@49.6020445,34.5572385,12z/data=!3m1!4b1!4m5!3m4!1s0x40d825e425e6ba6b:0xcf3e6bdfb9e4ca82!8m2!3d49.588267!4d34.5514169"
+        >Open map</a
+      >
+    </div>
+
+    <!-- Модалка благодарочка -->
+    <div class="modal-thanks">
+      <button type="button" class="modal-close" data-modal-close>
+        <svg width="9" height="9">
+          <use href="/src/images/symbol-defs.svg#close"></use>
+        </svg>
+      </button>
+      <p class="modal-thanks__interest">
+        Thank you for your interest in owning an Ice Cream shop
+      </p>
+      <p class="modal-thanks__text">
+        Due to the overwhelming volume of franchise requests we are not
+        accepting new franchisee applications at this time. Once the application
+        process resumes, we will contact you for further information. Please
+        fill out the contact information below and we will reach out for
+        additional information. We appreciate your patience.
+      </p>
+      <form class="modal-input">
+        <input
+          class="modal-input__name-m"
+          type="text"
+          name="username"
+          required
+          placeholder="Name"
+        />
+        <input
+          class="modal-input__phone-m"
+          type="tel"
+          name="phone"
+          maxlength="10"
+          required
+          placeholder="Phone"
+        />
+        <input
+          class="modal-input__email-m"
+          type="email"
+          name="mail"
+          required
+          placeholder="Email"
+        />
+        <input
+          class="modal-input__comment-m"
+          type="text"
+          name="comment"
+          placeholder="Comment"
+        />
+      </form>
+      <button class="submit-button" type="submit">Submit</button>
+    </div>
+
+    <!-- Модалка состав -->
+    <div class="modal-compound">
+      <p class="modal-compound__chololate">Chololate icecream</p>
+      <div class="modal-compound__image">
+        <img
+          src="/src/images/modal/ingredients.png"
+          alt="ingredients picture"
+        />
+      </div>
+      <ul class="modal-compound__ingredients">
+        <li class="modal-compound__indicators">
+          <div class="modal-compound__cal">
+            <p class="modal-compound__number">320</p>
+            <p class="modal-compound__values">kcal</p>
+          </div>
+        </li>
+        <li class="modal-compound__indicators">
+          <div class="modal-compound__cal">
+            <p class="modal-compound__number">4g</p>
+            <p class="modal-compound__values">Prote...</p>
+          </div>
+        </li>
+        <li class="modal-compound__indicators">
+          <div class="modal-compound__cal">
+            <p class="modal-compound__number">8,2g</p>
+            <p class="modal-compound__values">Fats</p>
+          </div>
+        </li>
+        <li class="modal-compound__indicators">
+          <div class="modal-compound__cal">
+            <p class="modal-compound__number">40,4g</p>
+            <p class="modal-compound__values">Carbs</p>
+          </div>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
-
-<!-- <div>
-
-</div>
-<div>
-
-</div>
-<div>
-
-</div> -->
-<!-- <div class="modal-input__image">
-        <div class="modal-input__ice-cream">
-          <img
-            src="/src/images/modal/ice-cream_m.png"
-            alt=""
-            width="131"
-            height="131"
-          />
-          <span class=""> ice cream </span>
-        </div>
-        <img
-          src="/src/images/modal/ice-coffe_m.png"
-          alt=""
-          width="131"
-          height="131"
-        />
-        <img
-          src="/src/images/modal/milkshake_m.png"
-          alt=""
-          width="131"
-          height="131"
-        /> -->
-<!--
-<div>
-  <span class="">How it’s made?</span>
-  <div class="modal-read-more">
-    <div class="modal-play-video">
-      <svg href="./">
-        <use href></use>
-      </svg>
-    </div>
-  </div>
-</div> -->

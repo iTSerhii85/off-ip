@@ -227,10 +227,6 @@
   }
 }
 
-// .contact-buttons-btn {
-//   background: #f8d24e;
-//   border-radius: 10px;
-// }
 .contact-bottons {
   text-align: center;
   margin-top: 32px;
@@ -238,6 +234,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 16px;
   }
 }

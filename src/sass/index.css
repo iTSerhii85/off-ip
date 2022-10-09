@@ -140,12 +140,33 @@ button {
   border: 1px solid #84a178;
   border-radius: 10px;
 }
+.modal-input__name-ing-m, .modal-input__phone-ing-m {
+  width: 240px;
+  height: 42px;
+  margin-bottom: 12px;
+  padding-left: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+}
 .modal-input__comment-m {
   padding-left: 12px;
   padding-top: 8px;
   padding-bottom: 39px;
   width: 224px;
   height: 64px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+}
+.modal-input__comment-ing-m {
+  padding-left: 12px;
+  padding-top: 8px;
+  padding-bottom: 39px;
+  width: 240px;
+  height: 84px;
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid #84a178;
   border-radius: 10px;
@@ -460,15 +481,16 @@ input::placeholder {
   display: flex;
   justify-content: center;
   border-radius: 50%;
+  margin-bottom: 29px;
 }
 .modal-compound__ingredients {
   display: flex;
   justify-content: center;
-  gap: 9px;
 }
 .modal-compound__indicators {
   justify-content: center;
   color: #131313;
+  gap: 9px;
 }
 .modal-compound__cal {
   flex-direction: column;
@@ -498,6 +520,35 @@ input::placeholder {
   align-items: center;
   text-align: center;
   color: #131313;
+}
+
+.ingredients {
+  margin-top: 39px;
+  margin-bottom: 24px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  color: #131313;
+}
+.ingredients__list {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 176%;
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 0.04em;
+  color: #131313;
+  gap: 11px;
+}
+.ingredients__margin-bot {
+  margin-bottom: 48px;
 }
 
 .footer {

@@ -199,6 +199,11 @@
 
     <!-- Модалка состав -->
     <div class="modal-compound">
+      <button type="button" class="modal-close" data-modal-close>
+        <svg width="9" height="9">
+          <use href="/src/images/symbol-defs.svg#close"></use>
+        </svg>
+      </button>
       <p class="modal-compound__chololate">Chololate icecream</p>
       <div class="modal-compound__image">
         <img
@@ -232,6 +237,57 @@
           </div>
         </li>
       </ul>
+      <p class="ingredients">Ingredients</p>
+      <ul class="ingredients__margin-bot">
+        <li class="ingredients__list">
+          <p>Milk</p>
+          <p>100ml</p>
+        </li>
+        <li class="ingredients__list">
+          <p>Belgian chocolate</p>
+          <p>20g</p>
+        </li>
+        <li class="ingredients__list">
+          <p>Cream</p>
+          <p>150 ml</p>
+        </li>
+        <li class="ingredients__list">
+          <p>Cocoa powder</p>
+          <p>30g</p>
+        </li>
+        <li class="ingredients__list">
+          <p>Sugar</p>
+          <p>40g</p>
+        </li>
+        <li class="ingredients__list">
+          <p>Vanilla sugar</p>
+          <p>10g</p>
+        </li>
+      </ul>
+      <form class="modal-input" name="modal-form" autocomplete="on">
+        <input
+          class="modal-input__name-ing-m"
+          type="text"
+          name="username"
+          required
+          placeholder="Name"
+        />
+        <input
+          class="modal-input__phone-ing-m"
+          type="tel"
+          name="phone"
+          maxlength="10"
+          required
+          placeholder="Phone"
+        />
+        <input
+          class="modal-input__comment-ing-m"
+          type="text"
+          name="comment"
+          placeholder="Comment"
+        />
+        <button class="submit-button" type="submit">Submit</button>
+      </form>
     </div>
   </body>
 </html>

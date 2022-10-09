@@ -42,7 +42,7 @@
         stroke: var(--primary-color);
     }
 
-    .btn-franchise {
+    .btn-franchise:focus & {
         fill: var(--primary-color);
         stroke: var(--primary-color);
     }

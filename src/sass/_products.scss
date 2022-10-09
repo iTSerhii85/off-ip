@@ -1,0 +1,255 @@
+.products-box {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.dark-text {
+  color: var(--secondary-color);
+}
+.products-list__item_bg-green {
+  background-color: #aec6a5;
+}
+.products-list__item_bg-yellow {
+  background-color: #efd478;
+}
+.products-list__item_bg-chocolate {
+  background-color: #d6936d;
+}
+.title.dark-text {
+  margin-bottom: 148px;
+}
+.products-list__item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 24px;
+
+  padding: 123px 40px 20px 40px;
+  width: 280px;
+  height: 420px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.products-list__item:not(:last-child) {
+  margin-bottom: 164px;
+}
+
+.products-list__item::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+
+  width: 200px;
+  height: 200px;
+  background-size: 200px 200px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+}
+.products-list__item_bg-green::before {
+  background-image: url(../images/products/kelsey-curtis-mobile.jpg);
+}
+
+.products-list__item_bg-yellow::before {
+  background-image: url(../images/products/pariwat-pannium-mobile.jpg);
+}
+
+.products-list__item_bg-chocolate::before {
+  background-image: url(../images/products/victor-rutka-mobile.jpg);
+}
+
+.products-list__underlay::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, 55%);
+  width: 200px;
+  height: 200px;
+  background-color: #d9d9d9;
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.products-list__underlay_bg-green::before {
+  background-image: linear-gradient(
+    rgba(156, 190, 143, 0.7),
+    rgba(156, 190, 143, 0.7)
+  );
+  box-shadow: 0 5px 20px rgba(10, 136, 23, 0.25);
+}
+
+.products-list__underlay_bg-yellow::before {
+  background-image: linear-gradient(
+    rgba(248, 210, 78, 0.7),
+    rgba(248, 210, 78, 0.7)
+  );
+  box-shadow: 0 5px 20px rgba(153, 114, 23, 0.25);
+}
+
+.products-list__underlay_bg-chocolate::before {
+  background-image: linear-gradient(
+    rgba(213, 117, 63, 0.7),
+    rgba(213, 117, 63, 0.7)
+  );
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+.products-list__title {
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  vertical-align: top;
+  color: var(--secondary-color);
+}
+
+.products-list__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.79;
+  text-align: center;
+  vertical-align: top;
+  color: var(--secondary-color);
+}
+
+.products-btn {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .products-list__item_bg-green::before {
+    background-image: url(../images/products/kelsey-curtis-mobile@2x.jpg);
+  }
+
+  .products-list__item_bg-yellow::before {
+    background-image: url(../images/products/pariwat-pannium-mobile@2x.jpg);
+  }
+
+  .products-list__item_bg-chocolate::before {
+    background-image: url(../images/products/victor-rutka-mobile@2x.jpg);
+  }
+}
+
+// =============================Mobile======================
+
+// =============================Tablet======================
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin: 0;
+  }
+
+  .products-box {
+    padding-bottom: 82px;
+  }
+
+  .title.dark-text {
+    margin-bottom: 200px;
+  }
+  .products-list {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .products-list__item {
+    border-radius: 16px;
+    width: 224px;
+    height: 100%;
+    padding: 108px 26px 20px 26px;
+    flex-basis: calc((100% - 32px) / 3);
+  }
+
+  .products-list__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .products-list__title {
+    font-size: 22px;
+    line-height: 1.23;
+  }
+
+  .products-list__text {
+    margin-bottom: 90px;
+  }
+
+  .products-list__item_bg-green::before {
+    background-image: url(../images/products/kelsey-curtis-tablet.jpg);
+  }
+
+  .products-list__item_bg-yellow::before {
+    background-image: url(../images/products/pariwat-pannium-tablet.jpg);
+  }
+
+  .products-list__item_bg-chocolate::before {
+    background-image: url(../images/products/victor-rutka-tablet.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .products-list__item_bg-green::before {
+    background-image: url(../images/products/kelsey-curtis-tablet@2x.jpg);
+  }
+
+  .products-list__item_bg-yellow::before {
+    background-image: url(../images/products/pariwat-pannium-tablet@2x.jpg);
+  }
+
+  .products-list__item_bg-chocolate::before {
+    background-image: url(../images/products/victor-rutka-tablet@2x.jpg);
+  }
+}
+
+// =============================Tablet======================
+
+// =============================Desktop======================
+
+@media screen and (min-width: 1200px) {
+  .products-list__item_bg-green::before {
+    background-image: url(../images/products/kelsey-curtis-desktop.jpg);
+  }
+
+  .products-list__item_bg-yellow::before {
+    background-image: url(../images/products/pariwat-pannium-desktop.jpg);
+  }
+
+  .products-list__item_bg-chocolate::before {
+    background-image: url(../images/products/victor-rutka-desktop.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .products-list__item_bg-green::before {
+    background-image: url(../images/products/kelsey-curtis-desktop@2x.jpg);
+  }
+
+  .products-list__item_bg-yellow::before {
+    background-image: url(../images/products/pariwat-pannium-desktop@2x.jpg);
+  }
+
+  .products-list__item_bg-chocolate::before {
+    background-image: url(../images/products/victor-rutka-desktop@2x.jpg);
+  }
+}
+
+// =============================Desktop======================

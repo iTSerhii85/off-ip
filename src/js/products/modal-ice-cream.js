@@ -1,8 +1,8 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector("[data-modal-open]"),
-    closeModalBtn: document.querySelector("[data-modal-close]"),
-    modal: document.querySelector("[data-modal]"),
+    openModalBtn: document.querySelector("[data-modal-open-cream]"),
+    closeModalBtn: document.querySelector("[data-modal-close-cream]"),
+    modal: document.querySelector("[data-modal-cream]"),
   };
 
   refs.openModalBtn.addEventListener("click", toggleModal);
@@ -13,5 +13,4 @@
     refs.modal.classList.toggle("is-hidden");
   }
 })();
-
 

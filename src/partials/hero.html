@@ -1,54 +1,64 @@
-<section class="hero" id="Home">
-  <div class="container">
-    <div>
-      <h1 class="hero__tittle">Ice cream made with passion</h1>
 
-      <div class="outlets">
-        <h2 class="outlets__title">16</h2>
-        <p class="outlets__name">cafes</p>
+<section class="hero">
+    <div class="hero__container container">
+        <div>
+            <h1 class="hero__title">Ice cream,<br> made with,<br> <span class="hero__title-span"> passion</span></h1>
 
-        <h2 class="outlets__title">23</h2>
-        <p class="outlets__name">food trucks</p>
-      </div>
+            <div class="outlets">
+                <h2 class="outlets__title">16</h2>
+                <p class="outlets__name">cafes</p>
+
+                <h2 class="outlets__title">23</h2>
+                <p class="outlets__name">food trucks</p>
+            </div>
+        </div>
+
+        <ul class="anchor-list">
+            <li class="anchor-list__item">
+                <a href="#products-section" class="btn-products">Products</a>
+            </li>
+            <li class="anchor-list__item">
+                <a href="#how-its-made-section" class="btn-hero">How it's made?</a>
+            </li>
+        </ul>
+
+        <div class="hero-description">
+
+            <div class="discription-container">
+                <p class="hero-description__text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere nemo eaque praesentium autem suscipit. Quaerat vero
+                </p>
+                    <button class="btn-button">
+                        <svg class="button-arrow__icon">
+                            <use href="/./src/images/symbol-defs-btn.svg#icon-btn-arrow"></use>
+                        </svg>
+                    </button>
+            </div>
+
+        </div>
+
+
+
+        <div class="hero__ice-cream">
+            <picture>
+                <source srcset="/./src/images/hero/mobile-happy-ice-cream.png 1x, /./src/images/hero/mobile-happy-ice-cream@2x.png 2x">
+
+                <img class="happy-ice-creame" src="/./src/images/hero/mobile-happy-ice-cream.png" alt="happy-ice-cream">
+            </picture>
+
+            <svg class="smile">
+                <use href="/./src/images/hero/symbol-defs.svg#icon-smile"></use>
+            </svg>
+        </div>
+
+        <svg class="wave-left">
+            <use href="/./src/images/hero/symbol-defs.svg#icon-wave-left"></use>
+        </svg>
+
+        <svg class="wave-right">
+            <use href="/./src/images/hero/symbol-defs.svg#icon-wave-right"></use>
+        </svg>
+
     </div>
 
-    <ul class="anchor-list">
-      <li class="anchor-list__item">
-        <a href="#products-section" class="anchor-list__link">Products</a>
-      </li>
-      <li class="anchor-list__item">
-        <a href="#how-its-made-section" class="anchor-list__link"
-          >How it's made?</a
-        >
-      </li>
-
-      <div class="hero-description">
-        <!-- <picture>
-                    <source srcset="/./src/images/hero/desktop-plate-ice-cream-img.jpg 1x, /./src/images/hero/desktop-plate-ice-cream-img@2x.jpg 2x" media="(min-width: 1200px)">
-
-                    <source srcset="/./src/images/hero/tablet-plate-ice-cream-img.jpg 1x, /./src/images/hero/tablet-plate-ice-cream-img@2x.jpg 2x" media="(min-width: 768px)">
-
-                    <img src="/./src/images/hero/tablet-plate-ice-cream-img.jpg" alt="ice-cream-plate">
-                </picture> -->
-
-        <p class="hero-description__text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere nemo
-          eaque praesentium autem suscipit. Quaerat vero eos beatae nemo minima
-          doloribus blanditiis eum obcaecati officiis? Tenetur dolorem quis
-          laboriosam exercitationem.
-        </p>
-        <button class="hero-button__arrow">arro button</button>
-      </div>
-
-      <!-- <picture>
-                <source srcset="/./src/images/hero/desktop-happy-ice-cream-img.jpg 1x, /./src/images/hero/desktop-happy-ice-cream-img@2x.jpg 2x" media="(min-width: 1200px)">
-
-                <source srcset="/./src/images/hero/tablet-happy-ice-cream-img.jpg 1x, /./src/images/hero/tablet-happy-ice-cream-img@2x.jpg 2x" media="(min-width: 768px)">
-
-                <source srcset="/./src/images/hero/mobile-happy-ice-cream-img.jpg 1x, /./src/images/hero/mobile-happy-ice-cream-img@2x.jpg 2x" media="(max-width: 767px)">
-
-                <img src="/./src/images/hero/desktop-happy-ice-cream-img.jpg" alt="happy-ice-creame">
-            </picture> -->
-    </ul>
-  </div>
 </section>

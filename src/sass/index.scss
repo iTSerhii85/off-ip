@@ -1,9 +1,13 @@
+
 @import './common';
 @import "./base";
 @import "./container";
 @import "./vars";
 @import "./buttons";
 @import "./modal";
+@import './modal-tablet';
+@import "./modal-icecream.scss";
+@import "./modal-buy_now";
 @import "./header";
 @import "./hero";
 @import "./products";
@@ -12,6 +16,9 @@
 @import "./gallery";
 @import "./customer";
 @import "./contacts";
-@import "./footer"
+@import "./reviews";
+@import "./footer";
+
+
 
 

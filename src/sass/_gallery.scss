@@ -22,7 +22,9 @@
 }
 
 @media screen and (min-width: 480px) {
-
+  .gallery__container {
+    padding-bottom: 40px;
+  }
     #proparallax {
         display: block;
         position: relative;
@@ -30,7 +32,7 @@
         width: 100%;
         padding-top: 46%;
         border-radius: 7.40681px;
-        margin-bottom: 80px;
+        margin-top: -24px;
     }
 
     #proparallax img {
@@ -52,6 +54,9 @@
 }
 
 @media screen and (min-width: 768px) {
+    .gallery__container {
+    padding-bottom: 55px;
+    }
 
     #proparallax {
         display: block;
@@ -59,7 +64,7 @@
         overflow: hidden;
         border-radius: 18px;
         padding-top: 44%;
-        margin-bottom: 60px;
+        margin-top: -164px;
     }
 
     #proparallax img {
@@ -73,8 +78,8 @@
         /* controls img.one movement */
         0% {
             /* .imageloaded */
-            height: 327px;
-            width: 704px;
+            height: 100%;
+            width: 100%;
             left: 0;
             opacity: 1;
         }
@@ -82,20 +87,20 @@
         /* .imagehold runs from 0 to 27.77% */
         27.77% {
             /* .imageloaded */
-            width: 704px;
+            width: 100%;
             left: 0;
         }
 
         27.78% {
             /* .imagepreunload */
-            width: 704px;
+            width: 100%;
             left: 0;
-            right: 704px;
+            right: 100%;
         }
 
         33.33% {
             /* .imageunloaded */
-            height: 327px;
+            height: 100%;
             width: 0;
             left: 0;
             right: 0;
@@ -115,15 +120,15 @@
 
         94.44% {
             /* .imageinitial */
-            height: 327px;
+            height: 100%;
             width: 0;
-            left: 704px;
+            left: 100%;
             opacity: 1;
         }
 
         100% {
             /* .imageloaded */
-            width: 704px;
+            width: 100%;
             left: 0;
             opacity: 1;
         }
@@ -146,29 +151,29 @@
         27.78% {
             /* .imageinitial */
             width: 0;
-            height: 327px;
-            left: 704px;
+            height: 100%;
+            left: 100%;
             opacity: 1;
         }
 
         33.33% {
             /* .imageloaded */
-            width: 704px;
+            width: 100%;
             left: 0;
         }
 
         /* .imagehold runs from 33.34% - 61.10% */
         61.10% {
             /* .imageloaded */
-            width: 704px;
+            width: 100%;
             left: 0;
         }
 
         61.11% {
             /* .imagepreunload */
-            width: 704px;
+            width: 100%;
             left: 0;
-            right: 704px;
+            right: 100%;
         }
 
         66.67% {
@@ -176,7 +181,7 @@
             width: 0;
             right: 0;
             left: 0;
-            height: 327px;
+            height: 100%;
             opacity: 1;
         }
 
@@ -207,29 +212,29 @@
         61.11% {
             /* .imageinitial */
             width: 0;
-            height: 327px;
-            left: 704px;
+            height: 100%;
+            left: 100%;
             opacity: 1;
         }
 
         66.67% {
             /* .imageloaded */
-            width: 704px;
+            width: 100%;
             left: 0;
         }
 
         /* .imagehold runs from 66.67% - 94.43% */
         94.43% {
             /* .imageloaded */
-            width: 704px;
+            width: 100%;
             left: 0;
         }
 
         94.44% {
             /* .imagepreunload */
-            width: 704px;
+            width: 100%;
             left: 0;
-            right: 704px;
+            right: 100%;
         }
 
         100% {
@@ -237,7 +242,7 @@
             width: 0;
             right: 0;
             left: 0;
-            height: 327px;
+            height: 100%;
             opacity: 1;
         }
     }
@@ -280,7 +285,7 @@
         overflow: hidden;
         padding-top: 42%;
         border-radius: 24px;
-        margin-bottom: 128px;
+        margin-top: -94;
     }
 
 }

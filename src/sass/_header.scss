@@ -31,6 +31,7 @@
 // ! mobile-menu
 
 .mobile-menu {
+  display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -41,7 +42,7 @@
 
     overflow-y: scroll;
     overflow: auto;
-    transform: translateX(100%);
+    // transform: translateX(100%);
 
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -108,7 +109,7 @@
     }
 
     // ! mobile-menu
-    
+
     .mobile-menu-by-now-btn {
         display: none;
     }

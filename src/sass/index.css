@@ -133,9 +133,24 @@ button {
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
-  align-items: center;
   text-align: center;
   color: var(--secondary-color);
+}
+
+.button-arrow__icon {
+  width: 12px;
+  height: 12px;
+  fill: var(--secondary-color);
+  stroke: var(--secondary-color);
+  stroke-width: 4px;
+}
+.btn-solid-bg:focus .button-arrow__icon {
+  fill: var(--primary-color);
+  stroke: var(--primary-color);
+}
+.button-arrow__icon .btn-franchise {
+  fill: var(--primary-color);
+  stroke: var(--primary-color);
 }
 
 .btn-solid-bg {
@@ -347,7 +362,7 @@ button {
   top: 0;
   left: 0;
   padding-top: 12px;
-  background-color: green;
+  background-color: #84A178;
 }
 
 @media screen and (min-width: 768px) {
@@ -394,6 +409,91 @@ button {
   }
   .burger-button {
     display: none;
+  }
+}
+.hero {
+  margin-top: 0;
+  padding-top: 72px;
+  background-color: #84A178;
+}
+
+.hero__container {
+  position: relative;
+  height: 453px;
+}
+
+.hero__title {
+  text-transform: uppercase;
+  font-family: "Seymour One", sans-serif;
+  font-size: 26px;
+  line-height: 1.25;
+}
+
+.hero__title-span {
+  font-size: 34px;
+  line-height: 0.96;
+}
+
+.outlets,
+.hero-description {
+  display: none;
+}
+
+.anchor-list {
+  display: flex;
+  margin-top: 32px;
+}
+
+.happy-ice-creame {
+  position: absolute;
+  right: 81px;
+  bottom: 0;
+  width: 170px;
+  height: 220px;
+}
+
+.shadow-ice-cream {
+  position: absolute;
+  bottom: 0;
+  width: 170px;
+  height: 220px;
+}
+
+.smile {
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+}
+
+.wave-left {
+  position: absolute;
+  bottom: 0;
+  left: -15px;
+  width: 110px;
+  height: 34px;
+}
+
+.wave-right {
+  position: absolute;
+  bottom: 0;
+  right: -15px;
+  width: 130px;
+  height: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-bottom: 0;
+  }
+  .hero__container {
+    height: 350px;
+  }
+  .happy-ice-creame {
+    right: 92px;
+  }
+  .hero-description {
+    display: flex;
+    margin-top: 28px;
   }
 }
 .proparallax__box {

@@ -7,6 +7,21 @@ body {
   letter-spacing: 0.04em;
 
   height: 100%;
+
+  background-color: #ffffff;
+  background-image: url('../images/bg-body/ice_cream.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+  body {
+    background-image: url(../images/bg-body/ice_cream@2x.jpg);
+  }
 }
 
 img {
@@ -44,8 +59,12 @@ fieldset {
 }
 
 button {
+
   margin: 0;
   padding: 0;
   line-height: 0;
   border: none;
+
+  cursor: pointer;
+
 }

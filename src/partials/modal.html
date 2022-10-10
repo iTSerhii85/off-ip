@@ -11,100 +11,11 @@
     />
     <link rel="stylesheet" href="/src/sass/index.css" />
   </head>
-  <button class="button" type="button">Buy now</button>
   <body>
-    <div class="modal-mobile">
-      <ul class="modal-input__image">
-        <li>
-          <img
-            src="/src/images/modal/ice-cream_m.png"
-            alt=""
-            width="131"
-            height="131"
-          />
-        </li>
-        <li>
-          <img
-            src="/src/images/modal/ice-coffe_m.png"
-            alt=""
-            width="131"
-            height="131"
-          />
-        </li>
-        <li>
-          <img
-            src="/src/images/modal/milkshake_m.png"
-            alt=""
-            width="131"
-            height="131"
-          />
-        </li>
-      </ul>
-      <span class="modal-mobile__buy">Buy now</span>
-      <form class="modal-input" name="modal-form" autocomplete="on">
-        <ul class="modal-list">
-          <li class="">
-            <label>
-              <input
-                class="modal-list__ice-cream"
-                type="checkbox"
-                name="ice-cream"
-                value="ice-cream"
-            /></label>
-            <span class="">ice cream</span>
-          </li>
-          <li class="">
-            <label class="span-ice-cream"
-              ><input
-                class="modal-list__ice-coffe"
-                type="checkbox"
-                name="ice-cream"
-                value="ice-coffe"
-              /><span class="">ice coffee</span></label
-            >
-          </li>
-          <li class="">
-            <label class=""
-              ><input
-                class="modal-list__milkshake"
-                type="checkbox"
-                name="ice-cream"
-                value="milkshake"
-              /><span class="">milkshake</span></label
-            >
-          </li>
-        </ul>
-        <input
-          class="modal-input__name-m"
-          type="text"
-          name="username"
-          required
-          placeholder="Name"
-        />
-        <input
-          class="modal-input__phone-m"
-          type="tel"
-          name="phone"
-          maxlength="10"
-          required
-          placeholder="Phone"
-        />
-        <input
-          class="modal-input__comment-m"
-          type="text"
-          name="comment"
-          placeholder="Comment"
-        />
-        <button class="submit-button" type="submit">Submit</button>
-      </form>
-    </div>
-
-    <button class="button" type="button">Read more</button>
-
     <!-- Модалка с видео -->
-    <div class="modal-video">
+    <div class="modal-video" data-modal>
       <button type="button" class="modal-close" data-modal-close>
-        <svg width="9" height="9">
+        <svg width="24" height="24">
           <use href="/src/images/symbol-defs.svg#close"></use>
         </svg>
       </button>
@@ -126,9 +37,9 @@
 
     <!-- Модалка с картой -->
 
-    <div class="modal-map">
+    <div class="modal-map" data-modal>
       <button type="button" class="modal-close" data-modal-close>
-        <svg width="9" height="9">
+        <svg width="24" height="24">
           <use href="/src/images/symbol-defs.svg#close"></use>
         </svg>
       </button>
@@ -150,7 +61,7 @@
     <!-- Модалка благодарочка -->
     <div class="modal-thanks">
       <button type="button" class="modal-close" data-modal-close>
-        <svg width="9" height="9">
+        <svg width="24" height="24">
           <use href="/src/images/symbol-defs.svg#close"></use>
         </svg>
       </button>
@@ -196,98 +107,6 @@
       </form>
       <button class="submit-button" type="submit">Submit</button>
     </div>
-
-    <!-- Модалка состав -->
-    <div class="modal-compound">
-      <button type="button" class="modal-close" data-modal-close>
-        <svg width="9" height="9">
-          <use href="/src/images/symbol-defs.svg#close"></use>
-        </svg>
-      </button>
-      <p class="modal-compound__chololate">Chololate icecream</p>
-      <div class="modal-compound__image">
-        <img
-          src="/src/images/modal/ingredients.png"
-          alt="ingredients picture"
-        />
-      </div>
-      <ul class="modal-compound__ingredients">
-        <li class="modal-compound__indicators">
-          <div class="modal-compound__cal">
-            <p class="modal-compound__number">320</p>
-            <p class="modal-compound__values">kcal</p>
-          </div>
-        </li>
-        <li class="modal-compound__indicators">
-          <div class="modal-compound__cal">
-            <p class="modal-compound__number">4g</p>
-            <p class="modal-compound__values">Prote...</p>
-          </div>
-        </li>
-        <li class="modal-compound__indicators">
-          <div class="modal-compound__cal">
-            <p class="modal-compound__number">8,2g</p>
-            <p class="modal-compound__values">Fats</p>
-          </div>
-        </li>
-        <li class="modal-compound__indicators">
-          <div class="modal-compound__cal">
-            <p class="modal-compound__number">40,4g</p>
-            <p class="modal-compound__values">Carbs</p>
-          </div>
-        </li>
-      </ul>
-      <p class="ingredients">Ingredients</p>
-      <ul class="ingredients__margin-bot">
-        <li class="ingredients__list">
-          <p>Milk</p>
-          <p>100ml</p>
-        </li>
-        <li class="ingredients__list">
-          <p>Belgian chocolate</p>
-          <p>20g</p>
-        </li>
-        <li class="ingredients__list">
-          <p>Cream</p>
-          <p>150 ml</p>
-        </li>
-        <li class="ingredients__list">
-          <p>Cocoa powder</p>
-          <p>30g</p>
-        </li>
-        <li class="ingredients__list">
-          <p>Sugar</p>
-          <p>40g</p>
-        </li>
-        <li class="ingredients__list">
-          <p>Vanilla sugar</p>
-          <p>10g</p>
-        </li>
-      </ul>
-      <form class="modal-input" name="modal-form" autocomplete="on">
-        <input
-          class="modal-input__name-ing-m"
-          type="text"
-          name="username"
-          required
-          placeholder="Name"
-        />
-        <input
-          class="modal-input__phone-ing-m"
-          type="tel"
-          name="phone"
-          maxlength="10"
-          required
-          placeholder="Phone"
-        />
-        <input
-          class="modal-input__comment-ing-m"
-          type="text"
-          name="comment"
-          placeholder="Comment"
-        />
-        <button class="submit-button" type="submit">Submit</button>
-      </form>
-    </div>
+    <script src="/src/modal.js"></script>
   </body>
 </html>

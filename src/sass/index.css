@@ -99,29 +99,6 @@ button {
   text-transform: uppercase;
 }
 
-.modal-mobile {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 280px;
-  height: 986px;
-  background: #fcfcfc;
-  border: 2px solid #f8d24e;
-  border-radius: 10px;
-}
-.modal-mobile__buy {
-  text-align: center;
-  margin-bottom: 20px;
-  font-family: "Seymour One";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #131313;
-}
-
 .modal-input {
   display: flex;
   flex-direction: column;
@@ -171,67 +148,6 @@ button {
   border: 1px solid #84a178;
   border-radius: 10px;
 }
-.modal-input__image {
-  position: absolute;
-  top: 99px;
-  display: flex;
-  z-index: 999;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 88px;
-}
-
-.modal-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.modal-list__ice-cream {
-  width: 132px;
-  height: 136px;
-  margin-bottom: 83px;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  border: 2px solid #96af8c;
-  filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
-  border-radius: 15.7808px;
-}
-.modal-list__ice-coffe {
-  width: 132px;
-  height: 136px;
-  margin-bottom: 83px;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  border: 2px solid #efd478;
-  box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
-  border-radius: 15.7808px;
-}
-.modal-list__milkshake {
-  width: 132px;
-  height: 136px;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  border: 2px solid #d6936d;
-  filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
-  border-radius: 15.7808px;
-}
-.modal-list__ice-cream:checked {
-  background-color: #96af8c;
-  border-color: #96af8c;
-}
-.modal-list__ice-coffe:checked {
-  background-color: #efd478;
-  border-color: #efd478;
-}
-.modal-list__milkshake:checked {
-  background-color: #d6936d;
-  border-color: #d6936d;
-}
 
 .submit-button {
   display: flex;
@@ -247,182 +163,147 @@ button {
   cursor: pointer;
 }
 
-input::-moz-placeholder {
-  padding-left: 0px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  font-size: 12px;
-  line-height: 140%;
-  color: #131313;
-}
-
-input:-ms-input-placeholder {
-  padding-left: 0px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  font-size: 12px;
-  line-height: 140%;
-  color: #131313;
-}
-
-input::placeholder {
-  padding-left: 0px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  font-size: 12px;
-  line-height: 140%;
-  color: #131313;
-}
-
-.span-ice-cream {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  text-align: center;
-  color: #131313;
-}
-
-.modal-video {
-  position: relative;
-  margin-right: auto;
-  margin-left: auto;
-  width: 280px;
-  height: 459px;
-  background: #fcfcfc;
-  border: 2px solid #f8d24e;
-  border-radius: 10px;
-}
-.modal-video__how {
-  font-family: "Seymour One";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  margin-top: 28px;
-  margin-bottom: 20px;
-  color: #131313;
-}
-.modal-video__play {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 224px;
-  height: 199px;
-  background-image: url(/src/images/modal/ice-cream.jpg);
-  background-size: cover;
-  border-radius: 10px;
-}
-.modal-video__text_container {
-  width: 224px;
-  height: 140px;
-  margin-top: 20px;
-  margin-bottom: 28px;
-  margin-right: auto;
-  margin-left: auto;
-}
-.modal-video__text {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 140%;
-  color: #131313;
-}
-
-.video {
-  -webkit-animation-name: blinker;
-          animation-name: blinker;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: cubic-bezier(1, 0, 0, 1);
-          animation-timing-function: cubic-bezier(1, 0, 0, 1);
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  animation-name: blinker;
-  animation-iteration-count: infinite;
-  animation-timing-function: cubic-bezier(1, 0, 0, 1);
-  animation-duration: 1s;
-}
-
-@-webkit-keyframes blinker {
-  from {
-    opacity: 1;
+@media screen and (max-width: 767px) {
+  .modal-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 280px;
+    height: 459px;
+    background: #fcfcfc;
+    border: 2px solid #f8d24e;
+    border-radius: 10px;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  to {
-    opacity: 0;
+  .modal-video__how {
+    font-family: "Seymour One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 20px;
+    color: #131313;
+  }
+  .modal-video__play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 224px;
+    height: 199px;
+    background-image: url(/src/images/modal/ice-cream.jpg);
+    background-size: cover;
+    border-radius: 10px;
+  }
+  .modal-video__text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #131313;
+    padding-top: 20px;
+    padding-bottom: 28px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .video {
+    -webkit-animation-name: blinker;
+            animation-name: blinker;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(1, 0, 0, 1);
+            animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    animation-name: blinker;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    animation-duration: 1s;
+  }
+  @-webkit-keyframes blinker {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  @keyframes blinker {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  .modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
   }
 }
-
-@keyframes blinker {
-  from {
-    opacity: 1;
+@media screen and (max-width: 767px) {
+  .modal-map {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 280px;
+    height: 365px;
+    background: #fcfcfc;
+    border: 2px solid #f8d24e;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  to {
-    opacity: 0;
+  .modal-map__location {
+    font-family: "Seymour One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 20px;
+    color: #131313;
+  }
+  .modal-map__map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 224px;
+    height: 199px;
+  }
+  .link-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 134px;
+    height: 42px;
+    margin-top: 24px;
+    background: #f8d24e;
+    border-radius: 10px;
   }
 }
-.modal-close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 8px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.modal-map {
-  position: relative;
-  width: 280px;
-  height: 365px;
-  background: #fcfcfc;
-  border: 2px solid #f8d24e;
-  border-radius: 10px;
-  margin-right: auto;
-  margin-left: auto;
-}
-.modal-map__location {
-  font-family: "Seymour One";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  margin-top: 28px;
-  margin-bottom: 20px;
-  color: #131313;
-}
-.modal-map__map {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 224px;
-  height: 199px;
-}
-
-.link-map {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 134px;
-  height: 42px;
-  margin-top: 24px;
-  background: #f8d24e;
-  border-radius: 10px;
-}
-
 .modal-thanks {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 280px;
   height: 674px;
   background: #fcfcfc;
@@ -430,6 +311,7 @@ input::placeholder {
   border-radius: 10px;
   margin-right: auto;
   margin-left: auto;
+  overflow: hidden;
 }
 .modal-thanks__interest {
   font-family: "Seymour One";
@@ -444,7 +326,6 @@ input::placeholder {
 }
 .modal-thanks__text {
   width: 222px;
-  height: 240px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 24px;
@@ -456,101 +337,232 @@ input::placeholder {
   color: #131313;
 }
 
-.modal-compound {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  width: 280px;
-  height: 990px;
-  background: #fcfcfc;
-  border: 2px solid #f8d24e;
-  border-radius: 10px;
+@media screen and (min-width: 768px) {
+  .modal-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 568px;
+    height: 449px;
+    background: #fcfcfc;
+    border: 2px solid #f8d24e;
+    border-radius: 10px;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal-video__how {
+    font-family: "Seymour One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    color: #131313;
+  }
+  .modal-video__play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 448px;
+    height: 205px;
+    background-image: url(/src/images/modal/ice-cream.jpg);
+    background-size: cover;
+    border-radius: 10px;
+  }
+  .modal-video__text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #131313;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .video {
+    -webkit-animation-name: blinker;
+            animation-name: blinker;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(1, 0, 0, 1);
+            animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    animation-name: blinker;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    animation-duration: 1s;
+  }
+  @-webkit-keyframes blinker {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  @keyframes blinker {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  .modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
 }
-.modal-compound__chololate {
-  font-family: "Seymour One";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.4;
-  text-align: center;
-  margin-top: 28px;
-  margin-bottom: 20px;
-  color: #131313;
+@media screen and (min-width: 768px) {
+  .modal-map {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 568px;
+    height: 458px;
+    background: #fcfcfc;
+    border: 2px solid #f8d24e;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal-map__location {
+    font-family: "Seymour One";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    color: #131313;
+  }
+  .modal-map__map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 448px;
+    height: 260px;
+    background-image: url(/src/images/modal/PoltavaX.png);
+  }
+  .link-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 145px;
+    height: 42px;
+    margin-top: 32px;
+    background: #f8d24e;
+    border-radius: 10px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+  }
 }
-.modal-compound__image {
-  display: flex;
-  justify-content: center;
-  border-radius: 50%;
-  margin-bottom: 29px;
+@media screen and (min-width: 768px) {
+  .modal-thanks {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 568px;
+    height: 668px;
+    background: #fcfcfc;
+    border: 2px solid #f8d24e;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+  }
+  .modal-thanks__interest {
+    margin-right: auto;
+    margin-left: auto;
+    width: 322px;
+    height: 84px;
+    font-family: "Seymour One";
+    font-style: normal;
+    font-weight: 400;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-top: 28px;
+    margin-bottom: 20px;
+    color: #131313;
+  }
+  .modal-thanks__text {
+    width: 448px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 24px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #131313;
+  }
 }
-.modal-compound__ingredients {
-  display: flex;
-  justify-content: center;
+@media screen and (min-width: 768px) {
+  .modal-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .modal-input__name-m, .modal-input__phone-m, .modal-input__email-m {
+    width: 368px;
+    height: 42px;
+    margin-bottom: 16px;
+    padding-left: 16px;
+    padding-bottom: 11px;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84a178;
+    border-radius: 10px;
+  }
+  .modal-input__comment-m {
+    padding-left: 12px;
+    padding-top: 8px;
+    padding-bottom: 39px;
+    width: 368px;
+    height: 84px;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84a178;
+    border-radius: 10px;
+  }
+  .submit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 121px;
+    height: 42px;
+    background: #f8d24e;
+    border-radius: 10px;
+    cursor: pointer;
+  }
 }
-.modal-compound__indicators {
-  justify-content: center;
-  color: #131313;
-  gap: 9px;
-}
-.modal-compound__cal {
-  flex-direction: column;
-  width: 53px;
-  height: 72px;
-  border: 2px solid #9cbe8f;
-  border-radius: 40px;
-}
-.modal-compound__number {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 10px;
-  line-height: 2.8;
-  color: #131313;
-  background-color: #9cbe8f;
-  border-radius: 50%;
-  border: 2px solid #9cbe8f;
-}
-.modal-compound__values {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 12px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #131313;
-}
-
-.ingredients {
-  margin-top: 39px;
-  margin-bottom: 24px;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.4;
-  text-align: center;
-  color: #131313;
-}
-.ingredients__list {
-  padding-left: 20px;
-  padding-right: 20px;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 176%;
-  display: flex;
-  justify-content: space-between;
-  letter-spacing: 0.04em;
-  color: #131313;
-  gap: 11px;
-}
-.ingredients__margin-bot {
-  margin-bottom: 48px;
-}
-
 .footer {
   background-color: var(--bg-color);
 }

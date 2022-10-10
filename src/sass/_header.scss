@@ -1,4 +1,8 @@
 .hat {
+    // position: absolute;
+    top: 0;
+    left: 0;
+
     background-color: #84A178;
 }
 
@@ -23,18 +27,13 @@
     justify-content: space-between;
     height: 100%;
 
-    // position: absolute;
-    top: 0;
-    left: 0;
-
     padding-top: 12px;
 }
 
 // ! mobile-menu
 
 .mobile-menu {
-  display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
@@ -44,7 +43,7 @@
 
     overflow-y: scroll;
     overflow: auto;
-    // transform: translateX(100%);
+    transform: translateX(100%);
 
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 

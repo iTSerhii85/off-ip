@@ -1,11 +1,88 @@
+
 .hero {
   background-color: #84A178;
   height: 587px;
   position: relative;
+
+  &__container {}
+
+  &__content {}
+
+  &__title {
+    width: 367px;
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #FCFCFC;
+
+    padding-top: 40px;
+  }
+
+  &__statistics {}
+
+  &__list {
+    display: flex;
+    margin-top: 28px;
+  }
+
+  &__item {}
+
+  &__link {}
+
+  &__plate {
+    position: absolute;
+    bottom: 65;
+    left: 17;
+  }
+
+  &__text {}
+
+  &__left {}
+
+  &__right {}
+
+  &__icecream {
+    position: absolute;
+    right: 120;
+    bottom: 0;
+    z-index: 50;
+  }
+
+  &__smile1 {
+    position: absolute;
+    top: 120;
+    right: 305;
+    transform: rotate(-50deg);
+    z-index: 60;
+  }
+
+  &__smile2 {
+    position: absolute;
+    top: 65;
+    right: 170;
+    transform: rotate(50deg);
+    z-index: 60;
+  }
+
+  &__smile3 {
+    position: absolute;
+    top: 240;
+    right: 120;
+    z-index: 60;
+  }
+
+  &__bg-icecream {
+    position: absolute;
+    right: 0;
+    bottom: -70;
+    // transform: rotate(85deg);
+    z-index: 1;
+  }
 }
 
-.hero__plate {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+.container {}

@@ -1,6 +1,7 @@
     // backdrop
 
     .backdrop {
+        overflow: scroll;
         position: fixed;
         top: 0;
         left: 0;
@@ -33,15 +34,16 @@
 
   .modal-icecream {
     position: absolute;
-    top: 50%;
+    // top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     padding: 28px 20px 32px;
 
     background: var(--primary-color);
     border: 2px solid var(--active-color);
     border-radius: 10px;
 
+    margin-top: 20px;
     @media screen and (max-width: 767px) {
         width: 280px;
         height: auto;
@@ -55,11 +57,9 @@
 
   .modal-icecream__btn-close {
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     top: 28px;
     right: 20px;
+    z-index: 2;
 
     width: 20px;
     height: 20px;
@@ -68,6 +68,10 @@
   }
 
   .modal-icecream-form__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     position: relative;
     margin-bottom: 184px;
 
@@ -75,11 +79,16 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 1.4;
-
     text-align: center;
 
     color: var(--secondary-color);
 
+    @media screen and (max-width: 768px) {
+        width: 142px;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    
 
     @media screen and (min-width: 768px) {
       margin-bottom: 186px;

@@ -68,7 +68,7 @@
 .wave-right {
     position: absolute;
     bottom: 0;
-    right: -15px;
+    right: -5px;
 
     width: 130px;
     height: 50px;
@@ -77,6 +77,7 @@
 @media screen and (min-width: 768px) {
     .hero {
         padding-bottom: 0;
+
     }
 
     .hero__container {
@@ -87,8 +88,16 @@
         right: 92px;
     }
 
+  .hero__ice-cream-image {
+    position: absolute;
+    width: 170px;
+    width: 220px;
+
+  }
+
     .hero-description {
         display: flex;
         margin-top: 28px;
     }
 }
+

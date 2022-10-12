@@ -1,103 +1,214 @@
+
 .hero {
-    margin-top: 0;
-    padding-top: 72px;
-    background-color: #84A178;
-}
 
-.hero__container {
+  background-color: #84A178;
+  // height: 587px;
+  padding-top: 126px;
+
+  &__container {
+
     position: relative;
-    height: 453px;
-}
-
-.hero__title {
-    text-transform: uppercase;
-    font-family: 'Seymour One', sans-serif;
-    font-size: 26px;
-    line-height: 1.25;
-}
-
-.hero__title-span {
-    font-size: 34px;
-    line-height: 0.96;
-}
-
-.outlets,
-.hero-description {
-    display: none;
-}
-
-.anchor-list {
     display: flex;
+    justify-content: space-between;
+    padding-bottom: 57px;
 
-    margin-top: 32px;
-}
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 100%;
 
-.happy-ice-creame {
-    position: absolute;
-
-    right: 81px;
-    bottom: 0;
-
-    width: 170px;
-    height: 220px;
-}
-
-.shadow-ice-cream {
-    position: absolute;
-    bottom: 0;
-
-    width: 170px;
-    height: 220px;
-}
-
-.smile {
-    position: absolute;
-    right: 0;
-    bottom: 50px;
-}
-
-.wave-left {
-    position: absolute;
-    bottom: 0;
-    left: -15px;
-
-    width: 110px;
-    height: 34px;
-}
-
-.wave-right {
-    position: absolute;
-    bottom: 0;
-    right: -5px;
-
-    width: 130px;
-    height: 50px;
-}
-
-@media screen and (min-width: 768px) {
-    .hero {
-        padding-bottom: 0;
-
+    @media (min-width: 1200px) {
+      background-image: url("/src/images/hero/points.png");
     }
-
-    .hero__container {
-        height: 350px;
-    }
-
-    .happy-ice-creame {
-        right: 92px;
-    }
-
-  .hero__ice-cream-image {
-    position: absolute;
-    width: 170px;
-    width: 220px;
 
   }
 
-    .hero-description {
-        display: flex;
-        margin-top: 28px;
+  &__wrapper {
+
+  }
+
+  &__content {}
+
+  &__order {
+    display: flex;
+    align-items: center;
+    // width: 540px;
+  }
+
+  &__arrow {
+
+  }
+
+  &__title {
+    font-family: 'Seymour One';
+    text-transform: uppercase;
+    font-size: 26px;
+    line-height: 1.26;
+
+    width: 247px;
+
+    color: #FCFCFC;
+
+    @media (min-width:768px) {
+      width: 200px;
+      font-size: 18px;
+      line-height: 1.27;
     }
+
+    @media (min-width: 1200px) {
+      width: 367px;
+      font-size: 38px;
+      line-height: 1.26;
+    }
+  }
+
+  &__statistics {}
+
+  &__list {
+    display: flex;
+    margin-top: 28px;
+    margin-bottom: 42px;
+  }
+
+  &__item {}
+
+  &__link {}
+
+  &__plate {
+    margin-right: 14px;
+  }
+
+  &__text {
+    text-align: left;
+    font-size: 14px;
+    line-height: 140%;
+
+    color: #FCFCFC;
+
+    width: 250px;
+
+    &__svg {
+      display: block;
+      width: 40px;
+      height: 20px;
+      fill: inherit;
+    }
+  }
+
+  &__left {}
+
+  &__right {}
+
+  &__icecream {
+    position: absolute;
+    right: 5.8125rem;
+    bottom: 0;
+    z-index: 50;
+  }
+
+  &__smile1 {
+    position: absolute;
+    z-index: 60;
+
+    @media (max-width: 767px) {
+      top: 275;
+      right: 165;
+    }
+
+    @media (min-width: 768px) {
+      top: 200;
+      right: 210;
+    }
+
+    @media (min-width: 1200px) {
+      top: 90;
+      right: 290;
+    }
+  }
+
+  &__smile2 {
+    position: absolute;
+    z-index: 60;
+
+    @media (max-width: 767px) {
+      top: 235;
+      right: 100;
+    }
+
+    @media (min-width: 768px) {
+      top: 130;
+      right: 105;
+    }
+
+    @media (min-width: 1200px) {
+      top: -25;
+      right: 115;
+    }
+
+  }
+
+  &__smile3 {
+    position: absolute;
+    z-index: 60;
+
+    @media (max-width: 767px) {
+      top: 305;
+      right: 95;
+    }
+
+    @media (min-width: 768px) {
+      top: 245;
+      right: 95;
+    }
+
+    @media (min-width: 1200px) {
+      top: 170;
+      right: 80;
+    }
+  }
+
+  &__bg-icecream {
+    position: absolute;
+    z-index: 1;
+
+    @media (max-width: 767px) {
+      right: 35;
+      bottom: -50;
+    }
+
+    @media (min-width: 768px) {
+      right: 40;
+      bottom: -70;
+    }
+
+    @media (min-width: 1200px) {
+      right: 0;
+      bottom: -70;
+    }
+  }
 }
 
+.statistics {
+  z-index: 200;
+  width: 80px;
+  height: 170px;
+  &__number {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 56px;
+
+    text-transform: uppercase;
+
+    color: #131313;
+  }
+
+  &__cafes {
+    font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      /* identical to box height */
+
+      text-align: right;
+
+      color: #FCFCFC;
+  }
+}

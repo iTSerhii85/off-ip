@@ -1,6 +1,5 @@
 .hero {
   position: relative;
-
   margin-top: 0;
   padding-top: 61px;
   background-color: var(--bg-color);
@@ -8,7 +7,6 @@
 @media screen and (max-width: 767px) {
   .hero__container {
     margin: 0 auto;
-    // width: 100%;
     background-image: url(../images/hero/dots-mobile.png);
     background-repeat: no-repeat;
     background-position-y: 100%;
@@ -36,20 +34,33 @@
   vertical-align: top;
 }
 
-.hero__title--fs {
+.hero__title_font {
   font-size: 34px;
+  line-height: 0.97;
 }
 
-.hero__list {
+.hero-list {
   display: none;
 }
 
-.hero-btn {
+.hero-buttons {
   display: flex;
   gap: 8px;
 }
 
-.hero-ice {
+.hero-decor__icecream {
+  display: none;
+}
+
+.hero-info__text {
+  display: none;
+}
+
+.btn-open-modal-hero {
+  display: none;
+}
+
+.hero-image__icecream {
   margin: 0 auto;
   width: 170px;
   filter: drop-shadow(5px 5px 40px rgba(252, 252, 252, 0.44));
@@ -69,183 +80,6 @@
     }
   }
 }
-
-.hero-dig-ice {
-  display: none;
-}
-
-.hero__text {
-  display: none;
-}
-
-.btn-open-modal-hero {
-  display: none;
-}
-// .arrow-btn {
-//   border: 0;
-
-//   transition: transform $transition-duration $transition-function;
-
-//   &:hover {
-//     transform: scaleX(1.2);
-//   }
-
-//   &:focus {
-//     transform: scale(1.1);
-//   }
-
-//   @media screen and (max-width: 767px) {
-//     display: none;
-//   }
-
-//   @media screen and (min-width: 768px) {
-//     // height: 15px;
-//     background-color: transparent;
-//     margin-top: 20px;
-//   }
-
-//   @media screen and (min-width: 1200px) {
-//     margin-top: 32px;
-//   }
-// }
-
-// .btn-border__link {
-//   color: $color-text-dark;
-// }
-
-// .btn-transtarent__link {
-//   color: $color-icon-yellow;
-// }
-
-// .btn-transtarent {
-//   border: 0;
-//   display: flex;
-//   align-items: center;
-//   text-align: center;
-//   font-weight: 600;
-//   font-size: 8px;
-//   line-height: 10px;
-//   color: $color-link-default;
-//   text-decoration-line: underline;
-//   background-color: transparent;
-
-//   transition: color $transition-duration $transition-function,
-//     transform $transition-duration $transition-function;
-
-//   &:hover,
-//   &:focus {
-//     color: $color-link-hover;
-
-//     transform: scale(1.1) translatex(10px);
-//   }
-//   &:focus {
-//     color: $color-link-focus;
-//   }
-
-//   &:disabled {
-//     color: $color-link-disabled;
-//   }
-
-//   @media screen and (min-width: 1200px) {
-//     font-weight: 600;
-//     font-size: 14px;
-//     line-height: 17px;
-//     padding: 12px 22px;
-//   }
-// }
-
-// .icon-arrow {
-//   fill: transparent;
-//   stroke: currentColor;
-// }
-
-// .btn-border {
-//   border: 0;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   text-align: center;
-//   padding: 7px 11px;
-//   border: 2px solid $color-icon-yellow;
-//   border-radius: 8px;
-//   background-color: transparent;
-//   font-weight: 600;
-//   font-size: 8px;
-//   line-height: 10px;
-
-//   transition: color $transition-duration $transition-function,
-//     transform $transition-duration $transition-function,
-//     border-color $transition-duration $transition-function,
-//     box-shadow $transition-duration $transition-function;
-
-//   &:hover,
-//   &:focus {
-//     transform: scale(1.1) translate(-10px);
-//     box-shadow: 0 8px 26px rgba(0, 0, 0, 0.4), 0 28px 30px rgba(0, 0, 0, 0.3);
-//     border-color: $color-btn-hover-focus;
-//   }
-//   &:focus {
-//     border-color: $color-btn-hover-focus;
-//     color: $color-text-light;
-//   }
-
-// transition: color $transition-duration $transition-function,
-//   border-color $transition-duration $transition-function;
-
-// &:hover {
-//   border-color: $color-btn-hover-focus;
-// }
-
-// &:focus {
-//   border-color: $color-btn-hover-focus;
-//   color: $color-text-light;
-// }
-
-// &:disabled {
-//   border-color: $color-btn-disabled;
-// }
-
-//   @media screen and (min-width: 1200px) {
-//     font-weight: 600;
-//     font-size: 14px;
-//     line-height: 18px;
-//     padding: 12px 34px;
-//   }
-// }
-
-// @keyframes animate-hero {
-//   0% {
-//     opacity: 0;
-//     transform: rotate(0deg);
-//   }
-//   5% {
-
-//     opacity: 1;
-//     transform: rotate(0deg);
-//   }
-//   50% {
-//     transform: rotate(300deg);
-//   }
-//   70% {
-//     transform: rotate(230deg);
-//   }
-//   80% {
-//     transform: rotate(310deg);
-//   }
-
-//   100% {
-//     transform: rotate(0deg);
-//   }
-// }
-
-// @keyframes hero-ice {
-//   0% {
-//     transform: rotatey(180deg) scale(0.5);
-//   }
-//   100% {
-//     transform: rotatey(0deg) scale(1);
-//   }
-// }
 
 // ===============Tablet+==============================
 
@@ -269,59 +103,57 @@
       }
     }
   }
+
   .hero__title {
-    margin-top: 40px;
     position: absolute;
     margin-bottom: 0px;
     width: 181px;
     font-size: 18px;
-    line-height: 23px;
+    line-height: 1.28;
   }
 
-  .hero__title--fs {
+  .hero__title_font {
     font-size: 24px;
-    line-height: 13px;
+    line-height: 0.54;
   }
-  .hero-box {
+  .hero__box {
     position: relative;
-    width: 0;
   }
-  .hero__list {
+  .hero-list {
     position: absolute;
-    margin-top: 28px;
-    left: 650px;
+    right: 0;
     display: flex;
     flex-direction: column;
-
     gap: 20px;
   }
-  .hero__list--item {
+  .hero-list__item {
     display: flex;
     flex-direction: column;
+    gap: 4px;
   }
 
-  .hero-item__num {
+  .hero-list__number {
     font-weight: 900;
     font-size: 28px;
     line-height: 1.21;
     text-align: right;
+    vertical-align: top;
     text-transform: uppercase;
-
     color: var(--secondary-color);
   }
-  .hero-item__text {
+  .hero-list__text {
+    font-weight: 400;
     font-size: 8px;
     line-height: 1.25;
     text-align: right;
-    width: 55px;
   }
 
-  .hero-btn {
-    padding-top: 129px;
+  .hero-buttons {
+    padding-top: 94px;
     padding-bottom: 28px;
   }
 
-  .hero-ice {
+  .hero-image__icecream {
     position: absolute;
     bottom: -14px;
     left: 55%;
@@ -330,10 +162,10 @@
     height: 343px;
     margin: 0;
   }
-  .hero-pick-box {
+  .hero-image {
     position: relative;
   }
-  .hero-dig-ice {
+  .hero-decor__icecream {
     display: block;
     width: 152px;
 
@@ -352,30 +184,27 @@
       }
     }
   }
-  .hero-box-text {
+  .hero-info {
     position: relative;
   }
-  .hero__text {
+  .hero-info__text {
     display: block;
-    width: 151px;
-    font-size: 12px;
-    line-height: 140%;
     margin-bottom: 20px;
+    width: 151px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.42;
+    text-align: left;
   }
 
-  .hero__helper-box {
+  .hero-decor {
     display: flex;
     gap: 33px;
-    // position: absolute;
-    // left: 0;
-    // bottom: 0;
+    align-items: center;
   }
   .btn-open-modal-hero {
     display: block;
-    padding-bottom: 12px;
     border: 0;
-    // width: 100%;
-
     background-color: transparent;
   }
   .open-modal-hero__icon {
@@ -404,8 +233,8 @@
 
 @media screen and (min-width: 1200px) {
   .hero {
-    padding-top: 0px;
-    padding-bottom: 45px;
+    padding-top: 0;
+    padding-bottom: 65px;
 
     margin: 0 auto;
     background-image: url(../images/hero/dots-desktop.png);
@@ -429,66 +258,59 @@
     position: absolute;
     width: 367px;
     font-size: 38px;
-    line-height: 48px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+    line-height: 1.26;
   }
 
-  .hero__title--fs {
+  .hero__title_font {
     font-size: 38px;
-    line-height: 48px;
-    letter-spacing: 0.04em;
+    line-height: 1.26;
   }
-  .hero__list {
+  .hero-list {
     position: absolute;
-    margin-top: 56px;
-    left: 1070px;
+    top: 56px;
+    right: 0;
     display: flex;
     flex-direction: column;
-
-    gap: 20px;
+    gap: 16px;
   }
 
-  .hero-item__num {
-    font-weight: 900;
+  .hero-list__number {
     font-size: 46px;
     line-height: 1.22;
-    text-align: right;
   }
 
-  .hero-item__text {
+  .hero-list__text {
     font-size: 14px;
     line-height: 1.21;
-    width: 100px;
-    text-align: right;
   }
-  .hero-btn {
+  .hero-buttons {
     padding-top: 217px;
     padding-bottom: 42px;
   }
-  .hero-ice {
+  .hero-image__icecream {
     position: absolute;
-    bottom: -45px;
+    bottom: -65px;
     left: 50%;
     width: 484px;
     height: 590px;
   }
 
-  .hero-dig-ice {
+  .hero-decor__icecream {
     width: 225px;
   }
-  .hero-box-text {
+  .hero-info {
     margin-top: 66px;
   }
 
-  .hero__text {
-    font-size: 14px;
+  .hero-info__text {
+    margin-bottom: 32px;
     width: 220px;
     height: 80px;
-    margin-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.43;
   }
 
-  .hero__helper-box {
+  .hero-decor {
     gap: 14px;
   }
 }

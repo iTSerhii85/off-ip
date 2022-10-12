@@ -1,27 +1,28 @@
 <section class="hero">
   <div class="hero__container container">
-    <div class="hero-box">
+    <div class="hero__box">
       <h1 class="hero__title">
-        ice cream made with <span class="hero__title--fs">passion</span>
+        ice cream made with <span class="hero__title_font">passion</span>
       </h1>
 
-      <ul class="hero__list">
-        <li class="hero__list--item">
-          <span class="hero-item__num">16</span>
-          <span class="hero-item__text">cafes</span>
+      <ul class="hero-list">
+        <li class="hero-list__item">
+          <span class="hero-list__number">16</span>
+          <span class="hero-list__text">cafes</span>
         </li>
-        <li class="hero__list--item">
-          <span class="hero-item__num">23</span>
-          <span class="hero-item__text">food trucks</span>
+        <li class="hero-list__item">
+          <span class="hero-list__number">23</span>
+          <span class="hero-list__text">food trucks</span>
         </li>
       </ul>
     </div>
 
-    <div class="hero-btn">
+    <div class="hero-buttons">
       <a class="btn-products" href="#Our-products">Products</a>
-      <a class="btn-hero" href="#How it’s made?">How it’s made?</a>
+      <a class="btn-hero" href="#How-it’s-made?">How it’s made?</a>
     </div>
-    <div class="hero__helper-box">
+
+    <div class="hero-decor">
       <picture>
         <source
           srcset="
@@ -38,14 +39,14 @@
           media="(min-width:768px)"
         />
         <img
-          class="hero-dig-ice"
+          class="hero-decor__icecream"
           src="./images/hero/many-ice-cream-desktop.png"
-          alt="123123"
-          width="255"
+          alt="plate with ice-cream"
         />
       </picture>
-      <div class="hero-box-text">
-        <p class="hero__text">
+
+      <div class="hero-info">
+        <p class="hero-info__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et
         </p>
@@ -54,7 +55,6 @@
           class="btn-open-modal-hero"
           aria-label="about lorem"
           type="button"
-          data-modal-open-hero2
         >
           <svg class="open-modal-hero__icon">
             <use
@@ -65,7 +65,7 @@
       </div>
     </div>
 
-    <div class="hero-pick-box">
+    <div class="hero-image">
       <picture>
         <source
           srcset="
@@ -89,9 +89,8 @@
           media="(min-width:320px)"
         />
         <img
-          class="hero-ice"
+          class="hero-image__icecream"
           src="./images/hero/ice-cream-desktop.png"
-          width="484"
           alt="ice-cream"
         />
       </picture>

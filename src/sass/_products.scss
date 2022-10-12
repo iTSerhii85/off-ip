@@ -20,7 +20,7 @@
   padding: 123px 40px 8px 40px;
   width: 280px;
   height: 420px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
   &:not(:last-child) {
     margin-bottom: 164px;
   }
@@ -40,6 +40,16 @@
     background-size: cover;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 10;
+  }
+
+  transition-property: box-shadow, scale;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -115,7 +125,6 @@
   text-align: center;
   vertical-align: top;
   color: var(--secondary-color);
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .products-list__text {
@@ -125,7 +134,6 @@
   text-align: center;
   vertical-align: top;
   color: var(--secondary-color);
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),

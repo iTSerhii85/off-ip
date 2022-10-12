@@ -1,12 +1,31 @@
 
 .hero {
-  background-color: #84A178;
-  height: 587px;
   position: relative;
+  background-color: #84A178;
+  // height: 587px;
+  padding-top: 126px;
 
-  &__container {}
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 57px;
+  }
+
+  &__wrapper {
+
+  }
 
   &__content {}
+
+  &__order {
+    display: flex;
+    align-items: center;
+    // width: 540px;
+  }
+
+  &__arrow {
+
+  }
 
   &__title {
     width: 367px;
@@ -19,8 +38,6 @@
     text-transform: uppercase;
 
     color: #FCFCFC;
-
-    padding-top: 40px;
   }
 
   &__statistics {}
@@ -28,6 +45,7 @@
   &__list {
     display: flex;
     margin-top: 28px;
+    margin-bottom: 42px;
   }
 
   &__item {}
@@ -35,12 +53,24 @@
   &__link {}
 
   &__plate {
-    position: absolute;
-    bottom: 65;
-    left: 17;
+    margin-right: 14px;
   }
 
-  &__text {}
+  &__text {
+    font-size: 14px;
+    line-height: 140%;
+
+    color: #FCFCFC;
+
+    width: 300px;
+
+    &__svg {
+      display: block;
+      width: 40px;
+      height: 20px;
+      fill: inherit;
+    }
+  }
 
   &__left {}
 
@@ -48,31 +78,31 @@
 
   &__icecream {
     position: absolute;
-    right: 120;
+    right: 250;
     bottom: 0;
     z-index: 50;
   }
 
   &__smile1 {
     position: absolute;
-    top: 120;
-    right: 305;
+    top: 190;
+    right: 440;
     transform: rotate(-50deg);
     z-index: 60;
   }
 
   &__smile2 {
     position: absolute;
-    top: 65;
-    right: 170;
+    top: 120;
+    right: 280;
     transform: rotate(50deg);
     z-index: 60;
   }
 
   &__smile3 {
     position: absolute;
-    top: 240;
-    right: 120;
+    top: 290;
+    right: 250;
     z-index: 60;
   }
 
@@ -85,4 +115,31 @@
   }
 }
 
-.container {}
+.statistics {
+  z-index: 200;
+  width: 80px;
+  height: 170px;
+  &__number {
+    font-weight: 900;
+      font-size: 46px;
+      line-height: 56px;
+      /* identical to box height */
+
+      text-align: right;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+
+      color: #131313;
+  }
+
+  &__cafes {
+    font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      /* identical to box height */
+
+      text-align: right;
+
+      color: #FCFCFC;
+  }
+}

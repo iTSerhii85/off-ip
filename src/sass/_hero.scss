@@ -53,19 +53,32 @@
   margin: 0 auto;
   width: 170px;
   filter: drop-shadow(5px 5px 40px rgba(252, 252, 252, 0.44));
-  // animation: hero-ice 3000ms forwards;
+
+  animation-name: animate;
+  animation-duration: 1500ms;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+
+  @keyframes animate {
+    0% {
+      transform: scale(0);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
 }
 
 .hero-dig-ice {
   display: none;
-  // animation: animate-hero 40s forwards;
 }
 
 .hero__text {
   display: none;
 }
 
-.arrow-btn {
+.btn-open-modal-hero {
   display: none;
 }
 // .arrow-btn {
@@ -247,7 +260,6 @@
     background-position-y: 100%;
     background-position-x: center;
     background-size: 768px 68px;
-    // width: 768px;
 
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
       screen and (min-resolution: 192dpi) and (min-width: 768px),
@@ -324,6 +336,21 @@
   .hero-dig-ice {
     display: block;
     width: 152px;
+
+    animation-name: spin;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
   }
   .hero-box-text {
     position: relative;
@@ -333,6 +360,7 @@
     width: 151px;
     font-size: 12px;
     line-height: 140%;
+    margin-bottom: 20px;
   }
 
   .hero__helper-box {
@@ -341,6 +369,32 @@
     // position: absolute;
     // left: 0;
     // bottom: 0;
+  }
+  .btn-open-modal-hero {
+    display: block;
+    padding-bottom: 12px;
+    border: 0;
+    // width: 100%;
+
+    background-color: transparent;
+  }
+  .open-modal-hero__icon {
+    width: 40px;
+    height: 16px;
+    fill: var(--primary-color);
+    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .btn-open-modal-hero:hover & {
+      width: 50px;
+    }
+
+    .btn-open-modal-hero:focus & {
+      width: 50px;
+      height: 22px;
+      stroke: var(--primary-color);
+      stroke-width: 1px;
+    }
   }
 }
 
@@ -360,7 +414,6 @@
     background-size: contain;
     background-position-x: center;
     background-size: 1200px 384px;
-    // width: 1200px;
 
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
       screen and (min-resolution: 192dpi) and (min-width: 1200px),
@@ -432,6 +485,7 @@
     font-size: 14px;
     width: 220px;
     height: 80px;
+    margin-bottom: 32px;
   }
 
   .hero__helper-box {

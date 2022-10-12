@@ -1,14 +1,25 @@
 
 .hero {
-  position: relative;
+
   background-color: #84A178;
   // height: 587px;
   padding-top: 126px;
 
   &__container {
+
+    position: relative;
     display: flex;
     justify-content: space-between;
     padding-bottom: 57px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 100%;
+
+    @media (min-width: 1200px) {
+      background-image: url("/src/images/hero/points.png");
+    }
+
   }
 
   &__wrapper {
@@ -28,16 +39,26 @@
   }
 
   &__title {
-    width: 367px;
     font-family: 'Seymour One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 38px;
-    line-height: 48px;
-    letter-spacing: 0.04em;
     text-transform: uppercase;
+    font-size: 26px;
+    line-height: 1.26;
+
+    width: 247px;
 
     color: #FCFCFC;
+
+    @media (min-width:768px) {
+      width: 200px;
+      font-size: 18px;
+      line-height: 1.27;
+    }
+
+    @media (min-width: 1200px) {
+      width: 367px;
+      font-size: 38px;
+      line-height: 1.26;
+    }
   }
 
   &__statistics {}
@@ -57,12 +78,13 @@
   }
 
   &__text {
+    text-align: left;
     font-size: 14px;
     line-height: 140%;
 
     color: #FCFCFC;
 
-    width: 300px;
+    width: 250px;
 
     &__svg {
       display: block;
@@ -78,40 +100,90 @@
 
   &__icecream {
     position: absolute;
-    right: 250;
+    right: 5.8125rem;
     bottom: 0;
     z-index: 50;
   }
 
   &__smile1 {
     position: absolute;
-    top: 190;
-    right: 440;
-    transform: rotate(-50deg);
     z-index: 60;
+
+    @media (max-width: 767px) {
+      top: 275;
+      right: 165;
+    }
+
+    @media (min-width: 768px) {
+      top: 200;
+      right: 210;
+    }
+
+    @media (min-width: 1200px) {
+      top: 90;
+      right: 290;
+    }
   }
 
   &__smile2 {
     position: absolute;
-    top: 120;
-    right: 280;
-    transform: rotate(50deg);
     z-index: 60;
+
+    @media (max-width: 767px) {
+      top: 235;
+      right: 100;
+    }
+
+    @media (min-width: 768px) {
+      top: 130;
+      right: 105;
+    }
+
+    @media (min-width: 1200px) {
+      top: -25;
+      right: 115;
+    }
+
   }
 
   &__smile3 {
     position: absolute;
-    top: 290;
-    right: 250;
     z-index: 60;
+
+    @media (max-width: 767px) {
+      top: 305;
+      right: 95;
+    }
+
+    @media (min-width: 768px) {
+      top: 245;
+      right: 95;
+    }
+
+    @media (min-width: 1200px) {
+      top: 170;
+      right: 80;
+    }
   }
 
   &__bg-icecream {
     position: absolute;
-    right: 0;
-    bottom: -70;
-    // transform: rotate(85deg);
     z-index: 1;
+
+    @media (max-width: 767px) {
+      right: 35;
+      bottom: -50;
+    }
+
+    @media (min-width: 768px) {
+      right: 40;
+      bottom: -70;
+    }
+
+    @media (min-width: 1200px) {
+      right: 0;
+      bottom: -70;
+    }
   }
 }
 
@@ -121,15 +193,12 @@
   height: 170px;
   &__number {
     font-weight: 900;
-      font-size: 46px;
-      line-height: 56px;
-      /* identical to box height */
+    font-size: 46px;
+    line-height: 56px;
 
-      text-align: right;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
+    text-transform: uppercase;
 
-      color: #131313;
+    color: #131313;
   }
 
   &__cafes {

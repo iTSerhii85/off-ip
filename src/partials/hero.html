@@ -1,64 +1,100 @@
-
 <section class="hero">
-    <div class="hero__container container">
-        <div>
-            <h1 class="hero__title">Ice cream,<br> made with,<br> <span class="hero__title-span"> passion</span></h1>
+  <div class="hero__container container">
+    <div class="hero-box">
+      <h1 class="hero__title">
+        ice cream made with <span class="hero__title--fs">passion</span>
+      </h1>
 
-            <div class="outlets">
-                <h2 class="outlets__title">16</h2>
-                <p class="outlets__name">cafes</p>
-
-                <h2 class="outlets__title">23</h2>
-                <p class="outlets__name">food trucks</p>
-            </div>
-        </div>
-
-        <ul class="anchor-list">
-            <li class="anchor-list__item">
-                <a href="#products-section" class="btn-products">Products</a>
-            </li>
-            <li class="anchor-list__item">
-                <a href="#how-its-made-section" class="btn-hero">How it's made?</a>
-            </li>
-        </ul>
-
-        <div class="hero-description">
-
-            <div class="discription-container">
-                <p class="hero-description__text">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere nemo eaque praesentium autem suscipit. Quaerat vero
-                </p>
-                    <button class="btn-button">
-                        <svg class="button-arrow__icon">
-                            <use href="/./src/images/symbol-defs-btn.svg#icon-btn-arrow"></use>
-                        </svg>
-                    </button>
-            </div>
-
-        </div>
-
-
-
-        <div class="hero__ice-cream">
-            <picture>
-                <source srcset="/src/images/hero/mobile-happy-ice-cream.png 1x, /src/images/hero/mobile-happy-ice-cream@2x.png 2x">
-
-                <img class="happy-ice-creame" src="/src/images/hero/mobile-happy-ice-cream.png" alt="happy-ice-cream">
-            </picture>
-
-            <svg class="smile">
-                <use href="/src/images/hero/symbol-defs.svg#icon-smile"></use>
-            </svg>
-        </div>
-
-        <svg class="wave-left">
-            <use href="/./src/images/hero/symbol-defs.svg#icon-wave-left"></use>
-        </svg>
-
-        <svg class="wave-right">
-            <use href="/./src/images/hero/symbol-defs.svg#icon-wave-right"></use>
-        </svg>
-
+      <ul class="hero__list">
+        <li class="hero__list--item">
+          <span class="hero-item__num">16</span>
+          <span class="hero-item__text">cafes</span>
+        </li>
+        <li class="hero__list--item">
+          <span class="hero-item__num">23</span>
+          <span class="hero-item__text">food trucks</span>
+        </li>
+      </ul>
     </div>
 
+    <div class="hero-btn">
+      <a class="btn-products" href="#Our-products">Products</a>
+      <a class="btn-hero" href="#How it’s made?">How it’s made?</a>
+    </div>
+    <div class="hero__helper-box">
+      <picture>
+        <source
+          srcset="
+            ./images/hero/many-ice-cream-desktop.png    1x,
+            ./images/hero/many-ice-cream-desktop@2x.png 2x
+          "
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="
+            ./images/hero/many-ice-cream-tablet.png    1x,
+            ./images/hero/many-ice-cream-tablet@2x.png 2x
+          "
+          media="(min-width:768px)"
+        />
+        <img
+          class="hero-dig-ice"
+          src="./images/hero/many-ice-cream-desktop.png"
+          alt="123123"
+          width="255"
+        />
+      </picture>
+      <div class="hero-box-text">
+        <p class="hero__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+
+        <button
+          class="arrow-btn"
+          aria-label="about lorem"
+          type="button"
+          data-modal-open-hero2
+        >
+          <svg class="long-arrow" width="40" height="15">
+            <use
+              href="/./src/images/symbol-defs-btn.svg#btn-open-modal-products_icon"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="hero-pick-box">
+      <picture>
+        <source
+          srcset="
+            ./images/hero/ice-cream-desktop.png    1x,
+            ./images/hero/ice-cream-desktop@2x.png 2x
+          "
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="
+            ./images/hero/ice-cream-tablet.png    1x,
+            ./images/hero/ice-cream-tablet@2x.png 2x
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
+            ./images/hero/ice-cream-mobile.png    1x,
+            ./images/hero/ice-cream-mobile@2x.png 2x
+          "
+          media="(min-width:320px)"
+        />
+        <img
+          class="hero-ice"
+          src="./images/hero/ice-cream-desktop.png"
+          width="484"
+          alt="ice-cream"
+        />
+      </picture>
+    </div>
+  </div>
 </section>

@@ -3,9 +3,9 @@
 @media screen and (min-width: 768px) {
   .modal-video {
     position: absolute;
-    top: 50%;
+    margin-top: 30px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     width: 568px;
     height: 449px;
     background: #fcfcfc;
@@ -89,9 +89,9 @@
 @media screen and (min-width: 768px) {
   .modal-map {
     position: absolute;
-    top: 50%;
+    margin-top: 30px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     width: 568px;
     height: 458px;
     background: #fcfcfc;
@@ -150,9 +150,9 @@
 @media screen and (min-width: 768px) {
   .modal-thanks {
     position: absolute;
-    top: 50%;
+    margin-top: 30px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     width: 568px;
     height: 668px;
     background: #fcfcfc;

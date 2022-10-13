@@ -86,7 +86,7 @@
   }
 
   &__arrow {
-
+    fill: var(--primary-color);
   }
 
   &__title {
@@ -134,8 +134,10 @@
     line-height: 140%;
 
     color: #FCFCFC;
+    
+    width: 200px;
 
-    width: 250px;
+    margin-bottom: 32px;
 
     @media (min-width: 768px) {}
 

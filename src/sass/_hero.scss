@@ -29,35 +29,43 @@
     }
 
 
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 0 100%;
+
+
+    @media (max-width: 767px) {
+
+      background-repeat: no-repeat;
+      background-size: 130px 50px, 110px 35px;
+      background-position: bottom 0 right 0, bottom 0 left 0;
+
+      background-image: url("/src/images/hero/right-mobile.png"),
+        url("/src/images/hero/left-mobile.png");
+    }
+
+    @media (min-width: 768px) {
+
+      background-repeat: no-repeat;
+      background-size: 182px 67px, 110px 35px;
+      background-position: bottom 0 right 0, bottom 0 left 0;
+
+      background-image: url("/src/images/hero/right-tab.png"),
+      url("/src/images/hero/left-tab.png");
+    }
+
+      background-size: 100px, 120px;
+      background-repeat: no-repeat;
+      background-position: top 20px right 20px, button 20px left 20px;
 
     @media (min-width: 1200px) {
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 0 100%;
+
       background-image: url("/src/images/hero/points.png");
     }
 
   }
 
   &__wrapper {
-
-    // background-repeat: no-repeat;
-    // background-size: 100px, 100px;
-    // background-position: bottom 0 right -20, 50% 50%;
-
-    // @media (max-width: 767px) {
-    //     background-image: url("/src/images/hero/right-mobile.png"),
-    //       url("/src/images/hero/left-tab.png");
-    //   }
-
-  // @media (min-width: 1200px) {
-  //   background-image: url("/src/images/hero/right-mobile.png"),
-  //   url("/src/images/hero/left-tab.png");
-  // }
-
-  //   background-size: 100px, 120px;
-  //   background-repeat: no-repeat;
-  //   background-position: top 20px right 20px, button 20px left 20px;
 
   }
 
@@ -147,9 +155,20 @@
 
   &__icecream {
     position: absolute;
-    right: 5.8125rem;
     bottom: 0;
     z-index: 50;
+
+    @media (max-width: 767px) {
+      right: 75px;
+    }
+
+    @media (min-width: 768px) {
+      right: 5.8125rem;
+    }
+
+    @media (min-width: 1200px) {
+      right: 5.8125rem;
+    }
   }
 
   &__smile1 {
@@ -158,7 +177,7 @@
 
     @media (max-width: 767px) {
       top: 275;
-      right: 165;
+      right: 150;
     }
 
     @media (min-width: 768px) {
@@ -178,7 +197,7 @@
 
     @media (max-width: 767px) {
       top: 235;
-      right: 100;
+      right: 80;
     }
 
     @media (min-width: 768px) {
@@ -199,7 +218,7 @@
 
     @media (max-width: 767px) {
       top: 305;
-      right: 95;
+      right: 75;
     }
 
     @media (min-width: 768px) {

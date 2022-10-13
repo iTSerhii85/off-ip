@@ -160,6 +160,21 @@
     bottom: 0;
     z-index: 50;
 
+    animation-name: up;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+
+      @keyframes up {
+        0% {
+          transform: translateY(100%);
+        }
+
+        100% {
+          transform: translateY(0%);
+        }
+      }
+
     @media (max-width: 767px) {
       right: 75px;
     }

@@ -128,7 +128,7 @@
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    
+
 
     .modal-chec:checked + & {
         background-color: var(--bg-color);
@@ -149,7 +149,7 @@
         height: 132px;
         border-radius: 50%;
         background-repeat: no-repeat;
-        background-size: cover;      
+        background-size: cover;
         box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
     }
 }
@@ -214,8 +214,8 @@
 .modal-checbox-item-ice-cream {
     border: 2px solid #96AF8C;
 
-    &::before {     
-        z-index: 10; 
+    &::before {
+        z-index: 10;
         background-image: url(../images/modal-buy-mow/img-items-modal-buy-now_ice-cream.jpg);
     }
 }
@@ -253,7 +253,7 @@ screen and (min-resolution: 2dppx) and (min-width:10px) {
 .modal-checbox-item-milkshake{
     border: 2px solid #D6936D;
     filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
-        
+
 
     .modal-chec:checked+& {
         background-color: #D6936D;
@@ -301,7 +301,7 @@ screen and (min-resolution: 2dppx) and (min-width:10px) {
     gap: 12px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
 
     .center-inp {
         margin-bottom: 32px;
@@ -327,7 +327,7 @@ screen and (min-resolution: 2dppx) and (min-width:10px) {
         margin-bottom: 0;
         }
     }
-    
+
         .modal-form-input{
             width: 368px;
         }

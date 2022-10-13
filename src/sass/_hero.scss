@@ -89,28 +89,31 @@
     
   }
 
-  
+  &__arrow {
+    display: block;
+    border: 0;
+    background-color: transparent;
+}
 
   &__svg {
-    display: block;
-
     width: 40px;
     height: 16px;
     fill: var(--primary-color);
     transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    stroke-width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    stroke-width 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+
+  .hero__arrow:hover & {
+    width: 60px;
+  }
+
+  .hero__arrow:focus & {
+    width: 60px;
+    height: 22px;
+    stroke: var(--primary-color);
+    stroke-width: 1px;
+  }
 }
 
-    &__arrow:hover & {
-      width: 50px;
-    }
-
-    &__arrow:focus & {
-      width: 50px;
-      height: 22px;
-      stroke: var(--primary-color);
-      stroke-width: 1px;
-    }
 
   &__title {
     font-family: 'Seymour One';
@@ -173,9 +176,9 @@
 
     color: #FCFCFC;
     
-    width: 200px;
+    width: 250px;
 
-    margin-bottom: 32px;
+    margin-bottom: 25px;
 
     @media (min-width: 768px) {}
 
@@ -223,6 +226,21 @@
     position: absolute;
     z-index: 60;
 
+    animation-name: smile;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+
+    @keyframes smile {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
     @media (max-width: 767px) {
       top: 275;
       right: 150;
@@ -242,6 +260,21 @@
   &__smile2 {
     position: absolute;
     z-index: 60;
+
+    animation-name: smile;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+
+    @keyframes smile {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
 
     @media (max-width: 767px) {
       top: 235;
@@ -264,6 +297,21 @@
     position: absolute;
     z-index: 60;
 
+    animation-name: smile;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+
+    @keyframes smile {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
     @media (max-width: 767px) {
       top: 305;
       right: 75;
@@ -284,13 +332,28 @@
     position: absolute;
     z-index: 1;
 
+    animation-name: scale;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+
+    @keyframes scale {
+      0% {
+        transform: scale(0);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
     @media (max-width: 767px) {
-      right: 35;
+      right: 15;
       bottom: -50;
     }
 
     @media (min-width: 768px) {
-      right: 40;
+      right: 30;
       bottom: -70;
     }
 

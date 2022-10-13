@@ -1,99 +1,127 @@
 <section class="hero">
-  <div class="hero__container container">
-    <div class="hero__box">
-      <h1 class="hero__title">
-        ice cream made with <span class="hero__title_font">passion</span>
-      </h1>
 
-      <ul class="hero-list">
-        <li class="hero-list__item">
-          <span class="hero-list__number">16</span>
-          <span class="hero-list__text">cafes</span>
+  <div class="container hero__container">
+   <div class="hero__wrapper">
+    <div class="hero__content">
+      <h1 class="hero__title">ice cream made with passion</h1>
+      <ul class="hero__list">
+        <li class="hero__item">
+          <a href="#Our-products" class="hero__link btn-products">Products</a>
         </li>
-        <li class="hero-list__item">
-          <span class="hero-list__number">23</span>
-          <span class="hero-list__text">food trucks</span>
+        <li class="hero__item">
+          <a href="#How it’s made?" class="hero__link btn-hero">How it’s made?</a>
+
         </li>
       </ul>
     </div>
+    <div class="hero__order">
 
-    <div class="hero-buttons">
-      <a class="btn-products" href="#Our-products">Products</a>
-      <a class="btn-hero" href="#How-it’s-made?">How it’s made?</a>
-    </div>
 
-    <div class="hero-decor">
       <picture>
-        <source
-          srcset="
-            ./images/hero/many-ice-cream-desktop.png    1x,
-            ./images/hero/many-ice-cream-desktop@2x.png 2x
-          "
-          media="(min-width:1200px)"
-        />
-        <source
-          srcset="
-            ./images/hero/many-ice-cream-tablet.png    1x,
-            ./images/hero/many-ice-cream-tablet@2x.png 2x
-          "
-          media="(min-width:768px)"
-        />
-        <img
-          class="hero-decor__icecream"
-          src="./images/hero/many-ice-cream-desktop.png"
-          alt="plate with ice-cream"
-        />
+        <source srcset="
+            /src/images/hero/plate-desctop@1x.png 1x,
+            /src/images/hero/plate-desctop@2x.png 2x
+          " media="(min-width: 1200px)" type="image/png" />
+        <source srcset="
+            /src/images/hero/plate-tab@1x.png 1x,
+            /src/images/hero/plate-tab@2x.png 2x
+          " media="(min-width: 768px)" type="image/png" />
+
+        <img class="hero__plate" src="/src/images/hero/plate-desctop@1x.png" alt="icecream" />
       </picture>
-
-      <div class="hero-info">
-        <p class="hero-info__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et
-        </p>
-
-        <button
-          class="btn-open-modal-hero"
-          aria-label="about lorem"
-          type="button"
-        >
-          <svg class="open-modal-hero__icon">
-            <use
-              href="./images/symbol-defs-btn.svg#btn-open-modal-products_icon"
-            ></use>
+     <div class="hero__arrow">
+      <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et</p>
+        <a  href="#">
+          <svg class="hero__svg" height="50" width="50">
+            <use  href="/src/images/symbol-defs.svg#arrow"></use>
           </svg>
-        </button>
-      </div>
+        </a>
+     </div>
     </div>
+   </div>
 
-    <div class="hero-image">
-      <picture>
-        <source
-          srcset="
-            ./images/hero/ice-cream-desktop.png    1x,
-            ./images/hero/ice-cream-desktop@2x.png 2x
-          "
-          media="(min-width:1200px)"
-        />
-        <source
-          srcset="
-            ./images/hero/ice-cream-tablet.png    1x,
-            ./images/hero/ice-cream-tablet@2x.png 2x
-          "
-          media="(min-width:768px)"
-        />
-        <source
-          srcset="
-            ./images/hero/ice-cream-mobile.png    1x,
-            ./images/hero/ice-cream-mobile@2x.png 2x
-          "
-          media="(min-width:320px)"
-        />
-        <img
-          class="hero-image__icecream"
-          src="./images/hero/ice-cream-desktop.png"
-          alt="ice-cream"
-        />
-      </picture>
-    </div>
+        <picture>
+          <source srcset="
+            /src/images/hero/icecream-desctop@1x.png 1x,
+            /src/images/hero/icecream-desctop@2x.png 2x
+          " media="(min-width: 1200px)" type="image/png" />
+          <source srcset="
+            /src/images/hero/icecream-tab@1x.png 1x,
+            /src/images/hero/icecream-tab@2x.png 2x
+          " media="(min-width: 768px)" type="image/png" />
+          <source srcset="
+            /src/images/hero/icecream-mobile@1x.png 1x,
+            /src/images/hero/icecream-mobile@2x.png 2x
+          " media="(max-width: 767px)" type="image/png" />
+
+          <img class="hero__icecream" src="/src/images/hero/icecream-desctop@1x.png"
+            alt="icecream" />
+        </picture>
+
+        <picture>
+          <source srcset="
+            /src/images/hero/bg-icecream-desctop.png 1x
+          " media="(min-width: 1200px)" type="image/png" />
+          <source srcset="
+            /src/images/hero/bg-icecream-tab.png 1x
+          " media="(min-width: 768px)" type="image/png" />
+          <source srcset="
+            /src/images/hero/bg-icecream-mobile.png 1x
+          " media="(max-width: 767px)" type="image/png" />
+
+          <img class="hero__bg-icecream" src="/src/images/hero/bg-icecream-desctop.png" alt="icecream" />
+        </picture>
+
+        <picture>
+          <source srcset="
+            /src/images/hero/smile1-desctop.png 1x
+          " media="(min-width: 1200px)" type="image/png" />
+          <source srcset="
+            /src/images/hero/smile1-tab.png 1x
+          " media="(min-width: 768px)" type="image/png" />
+          <source srcset="
+            /src/images/hero/smile1-mobile.png 1x
+          " media="(max-width: 767px)" type="image/png" />
+
+          <img class="hero__smile1" src="/src/images/hero/smile1-desctop.png" alt="icecream" />
+        </picture>
+
+        <picture>
+          <source srcset="
+            /src/images/hero/smile2-desctop.png 1x
+          " media="(min-width: 1200px)" type="image/png" />
+          <source srcset="
+            /src/images/hero/smile2-tab.png 1x
+          " media="(min-width: 768px)" type="image/png" />
+          <source srcset="
+            /src/images/hero/smile2-mobile.png 1x
+          " media="(max-width: 767px)" type="image/png" />
+
+          <img class="hero__smile2" src="/src/images/hero/smile1-desctop.png" alt="icecream" />
+        </picture>
+
+        <picture>
+          <source srcset="
+            /src/images/hero/smile3-desctop.png 1x
+          " media="(min-width: 1200px)" type="image/png" />
+          <source srcset="
+            /src/images/hero/smile3-tab.png 1x
+          " media="(min-width: 768px)" type="image/png" />
+          <source srcset="
+            /src/images/hero/smile3-mobile.png 1x
+          " media="(max-width: 767px)" type="image/png" />
+
+          <img class="hero__smile3" src="/src/images/hero/smile1-desctop.png" alt="icecream" />
+        </picture>
+
+        <div class="hero__statistics statistics">
+          <p class="statistics__number">16</p>
+          <p class="statistics__cafes">cafes</p>
+          <p class="statistics__number">23</p>
+          <p class="statistics__cafes">food trucks</p>
+        </div>
+
   </div>
 </section>
+

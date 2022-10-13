@@ -1,336 +1,311 @@
+
 .hero {
-  position: relative;
-  margin-top: 0;
-  padding-top: 61px;
-  background-color: var(--bg-color);
-  overflow: hidden;
-}
-@media screen and (max-width: 767px) {
-  .hero__container {
-    margin: 0 auto;
-    background-image: url(../images/hero/dots-mobile.png);
-    background-repeat: no-repeat;
-    background-position-y: 100%;
-    background-size: contain;
 
+  background-color: #84A178;
 
-    @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-      screen and (min-resolution: 192dpi) and (max-width: 767px),
-      screen and (min-resolution: 2dppx) and (max-width: 767px) {
-      .hero__container {
-        background-image: url(../images/hero/dots-mobile@2x.png);
-      }
-    }
-  }
-}
-
-.hero__title {
-  width: 247px;
-  margin-bottom: 32px;
-  text-transform: uppercase;
-  font-family: 'Seymour One', sans-serif;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 1.27;
-  text-align: left;
-  vertical-align: top;
-}
-
-.hero__title_font {
-  font-size: 34px;
-  line-height: 0.97;
-}
-
-.hero-list {
-  display: none;
-}
-
-.hero-buttons {
-  display: flex;
-  gap: 8px;
-}
-
-.hero-decor__icecream {
-  display: none;
-}
-
-.hero-info__text {
-  display: none;
-}
-
-.btn-open-modal-hero {
-  display: none;
-}
-
-.hero-image__icecream {
-  margin: 0 auto;
-  width: 170px;
-  filter: drop-shadow(5px 5px 40px rgba(252, 252, 252, 0.44));
-
-  animation-name: animate;
-  animation-duration: 1500ms;
-  animation-timing-function: linear;
-  animation-iteration-count: 1;
-
-  @keyframes animate {
-    0% {
-      transform: scale(0);
-    }
-
-    100% {
-      transform: scale(1);
-    }
-  }
-}
-
-// ===============Tablet+==============================
-
-@media screen and (min-width: 768px) {
-  .hero {
-    padding-top: 40px;
-    padding-bottom: 13px;
-
-    margin: 0 auto;
-    background-image: url(../images/hero/dots-tablet.png);
-    background-repeat: no-repeat;
-    background-position-y: 100%;
-    background-position-x: center;
-    background-size: 768px 68px;
-
-    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-      screen and (min-resolution: 192dpi) and (min-width: 768px),
-      screen and (min-resolution: 2dppx) and (min-width: 768px) {
-      .hero {
-        background-image: url(../images/hero/dots-tablet@2x.png);
-      }
-    }
+  @media (max-width: 767px) {
+    padding-top: 80px;
   }
 
-  .hero__title {
-    position: absolute;
-    margin-bottom: 0px;
-    width: 181px;
-    font-size: 18px;
-    line-height: 1.28;
+  @media (min-width: 768px) {
+    padding-top: 110px;
   }
 
-  .hero__title_font {
-    font-size: 24px;
-    line-height: 0.54;
+  @media (min-width: 1200px) {
+    padding-top: 120px;
   }
-  .hero__box {
+
+  &__container {
+
     position: relative;
-  }
-  .hero-list {
-    position: absolute;
-    right: 0;
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    justify-content: space-between;
+
+    @media (min-width: 768px) {
+      padding-bottom: 13px;
+    }
+
+    @media (min-width: 1200px) {
+      padding-bottom: 57px;
+    }
+
+
+
+
+    @media (max-width: 767px) {
+
+      background-repeat: no-repeat;
+      background-size: 130px 50px, 110px 35px;
+      background-position: bottom 0 right 0, bottom 0 left 0;
+
+      background-image: url("/src/images/hero/right-mobile.png"),
+        url("/src/images/hero/left-mobile.png");
+    }
+
+    @media (min-width: 768px) {
+
+      background-repeat: no-repeat;
+      background-size: 182px 67px, 110px 35px;
+      background-position: bottom 0 right 0, bottom 0 left 0;
+
+      background-image: url("/src/images/hero/right-tab.png"),
+      url("/src/images/hero/left-tab.png");
+    }
+
+      background-size: 100px, 120px;
+      background-repeat: no-repeat;
+      background-position: top 20px right 20px, button 20px left 20px;
+
+    @media (min-width: 1200px) {
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 0 100%;
+
+      background-image: url("/src/images/hero/points.png");
+    }
+
   }
-  .hero-list__item {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+
+  &__wrapper {
+
   }
 
-  .hero-list__number {
-    font-weight: 900;
-    font-size: 28px;
-    line-height: 1.21;
-    text-align: right;
-    vertical-align: top;
-    text-transform: uppercase;
-    color: var(--secondary-color);
-  }
-  .hero-list__text {
-    font-weight: 400;
-    font-size: 8px;
-    line-height: 1.25;
-    text-align: right;
-  }
+  &__content {
 
-  .hero-buttons {
-    padding-top: 94px;
-    padding-bottom: 28px;
-  }
-
-  .hero-image__icecream {
-    position: absolute;
-    bottom: -14px;
-    left: 55%;
-
-
-    width: 270px;
-    height: 343px;
-    margin: 0;
-
-    animation-name: up;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-
-      @keyframes up {
-        0% {
-          transform: translateY(100%);
-        }
-
-        100% {
-          transform: translateY(0%);
-        }
-      }
-  }
-  .hero-image {
-    position: relative;
-  }
-  .hero-decor__icecream {
-    display: block;
-    width: 152px;
-
-    animation-name: spin;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-
-    @keyframes spin {
-      0% {
-        transform: rotate(0deg);
-      }
-
-      100% {
-        transform: rotate(360deg);
-      }
+    @media (max-width: 767px) {
+      margin-bottom: 288px;
     }
   }
-  .hero-info {
-    position: relative;
-  }
-  .hero-info__text {
-    display: block;
-    margin-bottom: 20px;
-    width: 151px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.42;
-    text-align: left;
-  }
 
-  .hero-decor {
+  &__order {
     display: flex;
-    gap: 33px;
     align-items: center;
-  }
-  .btn-open-modal-hero {
-    display: block;
-    border: 0;
-    background-color: transparent;
-  }
-  .open-modal-hero__icon {
-    width: 40px;
-    height: 16px;
-    fill: var(--primary-color);
-    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      stroke-width 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .btn-open-modal-hero:hover & {
-      width: 50px;
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &__arrow {
+
+  }
+
+  &__title {
+    font-family: 'Seymour One';
+    text-transform: uppercase;
+    font-size: 26px;
+    line-height: 1.26;
+
+    width: 247px;
+
+    color: #FCFCFC;
+
+    @media (min-width:768px) {
+      width: 200px;
+      font-size: 18px;
+      line-height: 1.27;
     }
 
-    .btn-open-modal-hero:focus & {
-      width: 50px;
-      height: 22px;
-      stroke: var(--primary-color);
-      stroke-width: 1px;
+    @media (min-width: 1200px) {
+      width: 367px;
+      font-size: 38px;
+      line-height: 1.26;
+    }
+  }
+
+  &__statistics {}
+
+  &__list {
+    display: flex;
+    margin-top: 28px;
+    margin-bottom: 42px;
+  }
+
+  &__item {}
+
+  &__link {}
+
+  &__plate {
+    margin-right: 14px;
+  }
+
+  &__text {
+    text-align: left;
+    font-size: 14px;
+    line-height: 140%;
+
+    color: #FCFCFC;
+
+    width: 250px;
+
+    @media (min-width: 768px) {}
+
+    @media (min-width: 768px) {}
+  }
+    &__svg {
+      display: block;
+      width: 40px;
+      height: 20px;
+      fill: inherit;
+
+  }
+
+  &__left {}
+
+  &__right {}
+
+  &__icecream {
+    position: absolute;
+    bottom: 0;
+    z-index: 50;
+
+    @media (max-width: 767px) {
+      right: 75px;
+    }
+
+    @media (min-width: 768px) {
+      right: 5.8125rem;
+    }
+
+    @media (min-width: 1200px) {
+      right: 5.8125rem;
+    }
+  }
+
+  &__smile1 {
+    position: absolute;
+    z-index: 60;
+
+    @media (max-width: 767px) {
+      top: 275;
+      right: 150;
+    }
+
+    @media (min-width: 768px) {
+      top: 80;
+      right: 210;
+    }
+
+    @media (min-width: 1200px) {
+      top: 90;
+      right: 290;
+    }
+  }
+
+  &__smile2 {
+    position: absolute;
+    z-index: 60;
+
+    @media (max-width: 767px) {
+      top: 235;
+      right: 80;
+    }
+
+    @media (min-width: 768px) {
+      top: 15;
+      right: 105;
+    }
+
+    @media (min-width: 1200px) {
+      top: -25;
+      right: 115;
+    }
+
+  }
+
+  &__smile3 {
+    position: absolute;
+    z-index: 60;
+
+    @media (max-width: 767px) {
+      top: 305;
+      right: 75;
+    }
+
+    @media (min-width: 768px) {
+      top: 125;
+      right: 95;
+    }
+
+    @media (min-width: 1200px) {
+      top: 170;
+      right: 80;
+    }
+  }
+
+  &__bg-icecream {
+    position: absolute;
+    z-index: 1;
+
+    @media (max-width: 767px) {
+      right: 35;
+      bottom: -50;
+    }
+
+    @media (min-width: 768px) {
+      right: 40;
+      bottom: -70;
+    }
+
+    @media (min-width: 1200px) {
+      right: 0;
+      bottom: -70;
     }
   }
 }
 
-// / ===============Tablet+==============================
 
-// / ===============Desktop+==============================
+.statistics {
+  text-align: center;
+  z-index: 200;
+  width: 80px;
+  height: 170px;
 
-@media screen and (min-width: 1200px) {
-  .hero {
-    padding-top: 0;
-    padding-bottom: 65px;
+  @media (max-width: 767px) {
+    display: none;
+  }
 
-    margin: 0 auto;
-    background-image: url(../images/hero/dots-desktop.png);
-    background-repeat: no-repeat;
-    background-position-y: 100%;
-    background-size: contain;
-    background-position-x: center;
-    background-size: 1200px 384px;
+  &__number {
+    text-align: right;
+    font-weight: 900;
+    line-height: 1.21;
 
-    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-      screen and (min-resolution: 192dpi) and (min-width: 1200px),
-      screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-      .hero {
-        background-image: url(../images/hero/dots-desktop@2x.png);
+    text-transform: uppercase;
+
+    color: #131313;
+
+    @media (min-width: 768px) {
+      font-size: 28px;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 46px;
+
+    }
+  }
+
+  &__cafes {
+    text-align: right;
+
+    color: #FCFCFC;
+
+    @media (min-width: 768px) {
+      font-size: 8px;
+      line-height: 1.25;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.21;
+
+      &:not(:last-child) {
+        margin-bottom: 16px;
       }
     }
   }
-
-  .hero__title {
-    margin-top: 45px;
-    position: absolute;
-    width: 367px;
-    font-size: 38px;
-    line-height: 1.26;
-  }
-
-  .hero__title_font {
-    font-size: 38px;
-    line-height: 1.26;
-  }
-  .hero-list {
-    position: absolute;
-    top: 56px;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .hero-list__number {
-    font-size: 46px;
-    line-height: 1.22;
-  }
-
-  .hero-list__text {
-    font-size: 14px;
-    line-height: 1.21;
-  }
-  .hero-buttons {
-    padding-top: 217px;
-    padding-bottom: 42px;
-  }
-  .hero-image__icecream {
-    position: absolute;
-    bottom: -65px;
-    left: 50%;
-    width: 484px;
-    height: 590px;
-  }
-
-  .hero-decor__icecream {
-    width: 225px;
-  }
-  .hero-info {
-    margin-top: 66px;
-  }
-
-  .hero-info__text {
-    margin-bottom: 32px;
-    width: 220px;
-    height: 80px;
-    font-size: 14px;
-    line-height: 1.43;
-  }
-
-  .hero-decor {
-    gap: 14px;
-  }
 }
 
-// / ===============Desktop+==============================

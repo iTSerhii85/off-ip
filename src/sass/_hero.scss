@@ -85,9 +85,20 @@
     }
   }
 
+  &__block-arrow {
+    
+  }
+
   &__arrow {
     fill: var(--primary-color);
   }
+
+  &__svg {
+    display: block;
+    width: 40px;
+    height: 20px;
+    fill: inherit;
+}
 
   &__title {
     font-family: 'Seymour One';
@@ -157,12 +168,6 @@
     @media (min-width: 768px) {}
 
     @media (min-width: 768px) {}
-  }
-    &__svg {
-      display: block;
-      width: 40px;
-      height: 20px;
-      fill: inherit;
   }
 
   &__left {}

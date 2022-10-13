@@ -3,6 +3,7 @@
   margin-top: 0;
   padding-top: 61px;
   background-color: var(--bg-color);
+  overflow: hidden;
 }
 @media screen and (max-width: 767px) {
   .hero__container {
@@ -11,6 +12,7 @@
     background-repeat: no-repeat;
     background-position-y: 100%;
     background-size: contain;
+
 
     @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
       screen and (min-resolution: 192dpi) and (max-width: 767px),
@@ -158,9 +160,25 @@
     bottom: -14px;
     left: 55%;
 
+
     width: 270px;
     height: 343px;
     margin: 0;
+
+    animation-name: up;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+
+      @keyframes up {
+        0% {
+          transform: translateY(100%);
+        }
+
+        100% {
+          transform: translateY(0%);
+        }
+      }
   }
   .hero-image {
     position: relative;

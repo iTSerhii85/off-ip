@@ -14,6 +14,8 @@ body {
   background-attachment: fixed;
   background-position: 0 0;
   background-repeat: no-repeat;
+
+  // cursor: url("/src/images/cursor.png") 4 12, auto;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -67,4 +69,8 @@ button {
 
   cursor: pointer;
 
+}
+
+a, button {
+  cursor: url("/src/images/cursor.png") 4 12, auto;
 }

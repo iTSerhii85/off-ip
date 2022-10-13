@@ -20,7 +20,7 @@
   padding: 12px 34px;
   border: 0;
   min-height: 42px;
-  min-width: 196px;
+  min-width: 164px;
   border-radius: 10px;
   font-weight: 600;
   font-size: 14px;
@@ -28,6 +28,10 @@
   align-items: center;
   text-align: center;
   color: var(--secondary-color);
+}
+
+.button-contact {
+  min-width: 196px;
 }
 
 // свг стрелка в кнопке

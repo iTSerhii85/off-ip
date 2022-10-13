@@ -135,3 +135,19 @@
     .slider__reviews {
         font-size: 16px;}
 }
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    color: white;
+  
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+  }

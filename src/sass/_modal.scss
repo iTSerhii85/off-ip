@@ -138,6 +138,7 @@
       background-image: url(/src/images/modal/ice-cream.jpg);
       background-size: cover;
       border-radius: 10px;
+
     }
 
     &__text {
@@ -280,5 +281,13 @@
     font-size: 14px;
     line-height: 140%;
     color: #131313;
+  }
+}
+
+
+.iframe {
+  @media (max-width: 767px) {
+    width: 225px;
+    height: 200px;
   }
 }

@@ -44,6 +44,11 @@
     line-height: 255%;
     text-align: center;
     color: #FCFCFC;
+
+    @media (max-width: 767px) {
+        padding: 25px 20px;
+        height: 250px;
+    }
 }
 
 .slider__name {
